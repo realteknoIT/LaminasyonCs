@@ -30,3 +30,30 @@
 *.exe
 *.out
 *.app
+
+# Build Folders
+bin/
+obj/
+
+# VS Code directories
+.vscode/
+.history/
+
+# Visual Studio directories
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# IDE specific
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# Package Folders
+packages/
