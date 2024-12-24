@@ -1,0 +1,108 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <Title>Laminasyon Makinesi</Title>
+    <Copyright>Realtekno Makina Otomasyon</Copyright>
+    <PackageIcon></PackageIcon>
+    <StartupObject>LaminasyonMakinesi.App</StartupObject>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;CS8601;CS0252;CS8602</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;CS8601;CS0252;CS8602</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="image\**" />
+    <Compile Remove="Model\**" />
+    <Compile Remove="ViewModel\**" />
+    <EmbeddedResource Remove="image\**" />
+    <EmbeddedResource Remove="Model\**" />
+    <EmbeddedResource Remove="ViewModel\**" />
+    <None Remove="image\**" />
+    <None Remove="Model\**" />
+    <None Remove="ViewModel\**" />
+    <Page Remove="image\**" />
+    <Page Remove="Model\**" />
+    <Page Remove="ViewModel\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="View\UControl\dummyArrow.cs" />
+    <Compile Remove="View\UControl\dummyArrow.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="View\UControl\dummyArrow.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="View\0.gif" />
+    <None Remove="View\1.gif" />
+    <None Remove="View\2.gif" />
+    <None Remove="View\3.gif" />
+    <None Remove="View\backanime.gif" />
+    <None Remove="View\background.png" />
+    <None Remove="View\background2.png" />
+    <None Remove="View\images\AddBtn.png" />
+    <None Remove="View\images\astar.png" />
+    <None Remove="View\images\DelBtn.png" />
+    <None Remove="View\images\dogsarma.png" />
+    <None Remove="View\images\FolderBtn.png" />
+    <None Remove="View\images\icon.ico" />
+    <None Remove="View\images\icon.png" />
+    <None Remove="View\images\kumas.png" />
+    <None Remove="View\images\makine.png" />
+    <None Remove="View\images\SaveBtn.png" />
+    <None Remove="View\images\SettingBtn.png" />
+    <None Remove="View\images\sunger.png" />
+    <None Remove="View\loading.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Sharp7" Version="1.1.84" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    <PackageReference Include="XamlAnimatedGif" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\images\AddBtn.png" />
+    <Resource Include="View\images\astar.png" />
+    <Resource Include="View\images\1.gif" />
+    <Resource Include="View\images\background.png" />
+    <Resource Include="View\images\background2.png" />
+    <Resource Include="View\images\DelBtn.png" />
+    <Resource Include="View\images\dogsarma.png" />
+    <Resource Include="View\images\FolderBtn.png" />
+    <Resource Include="View\images\icon.ico" />
+    <Resource Include="View\images\icon.png" />
+    <Resource Include="View\images\kumas.png" />
+    <Resource Include="View\images\loading.gif" />
+    <Resource Include="View\images\logo.png" />
+    <Resource Include="View\images\makine.png" />
+    <Resource Include="View\images\SaveBtn.png" />
+    <Resource Include="View\images\SettingBtn.png" />
+    <Resource Include="View\images\sunger.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="View\UControl\spinnerSol.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

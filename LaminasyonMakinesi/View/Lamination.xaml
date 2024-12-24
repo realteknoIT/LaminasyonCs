@@ -1,0 +1,42 @@
+﻿<Page x:Class="LaminasyonMakinesi.Lamination"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LaminasyonMakinesi"
+      xmlns:controls ="clr-namespace:LaminasyonMakinesi.View.UControl"
+      mc:Ignorable="d" 
+      d:DesignHeight="916" d:DesignWidth="1920" Background="Transparent"
+      Title="Lamination"
+      Loaded="Page_Loaded"
+      >
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/View/images/astar.png"
+                        Stretch="Uniform"
+                        Opacity="0.5"/>
+        </Grid.Background>
+
+
+
+        <controls:spinnerSol x:Name="sungerSol" Margin="910,113,896,685" TargetWidth="100" Visibility="Visible" Run="false" MouseDown="sungerSol_MouseDown"/>
+        <controls:spinnerSol x:Name="kumasSol" Margin="910,236,896,562" TargetWidth="100" Visibility="Hidden" Run="false"/>
+        <controls:spinnerSol x:Name="astarSol" Margin="910,354,896,444" TargetWidth="100" Visibility="Visible" Run="false"/>
+
+        <controls:spinnerSag x:Name="sungerSag" Margin="910,113,896,685" TargetWidth="100" Visibility="Hidden" Run="false"/>
+        <controls:spinnerSag x:Name="kumasSag" Margin="910,236,896,562" TargetWidth="100" Visibility="Visible" Run="false"/>
+        <controls:spinnerSag x:Name="astarSag" Margin="910,354,896,444" TargetWidth="100" Visibility="Hidden" Run="false"/>
+
+        <controls:waterArrow x:Name="laminasyonSungerAkis" Width="80" Height="60" Margin="825,113,1015,743" Run="false"/>
+        <controls:waterArrow x:Name="laminasyonKumasAkis" Width="80" Height="60" Margin="825,236,1015,620" Run="false"/>
+        <controls:waterArrow x:Name="laminasyonAstarAkis" Width="80" Height="60" Margin="825,364,1015,492" Run="false"/>
+
+        <controls:flameAnima x:Name="kumasFlame" Margin="806,181,1106,0" Height="30" VerticalAlignment="Top" Run="True"/>
+        <controls:flameAnima x:Name="astarFlame" Margin="1026,280,886,0" Height="42" VerticalAlignment="Top" Run="True"/>
+
+        <controls:TextGroup x:Name="LamineliKumas" Title="Astar" Subtitles="Silindir Mesafesi;Brülor Mesafesi;Dog Hızı;Çekme Hızı;Alev Boyu" Color="White;White;Red;White;White" Value="0;1;2;3;4" Unit="mm;mm;m/dk;m/dk;%" Margin="1290,90,354,531" />
+        <Button x:Name="button" Content="Button" Margin="264,170,1485,670" Click="button_Click"/>
+
+    </Grid>
+</Page>

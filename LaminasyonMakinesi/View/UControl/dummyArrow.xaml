@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="LaminasyonMakinesi.View.UControl.dummyArrow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LaminasyonMakinesi.View.UControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="20" d:DesignWidth="50">
+
+    <UserControl.Resources>
+        <Storyboard x:Key="MoveStoryboard" RepeatBehavior="Forever" AutoReverse="True" Timeline.DesiredFrameRate="10">
+            <DoubleAnimation Storyboard.TargetName="outerFlameScale" Storyboard.TargetProperty="(Canvas.Left)"
+                             From="0" To="20" Duration="0:0:0.3" />
+        </Storyboard>
+    </UserControl.Resources>
+
+    <Canvas Background="Transparent" Width="70" Height="20">
+        <Path x:Name="outerFlameScale"  
+          Data="M 0 10 L 10 0 L 10 6 L 40 6 L 40 0 L 50 10 L 40 20 L 40 14 L 10 14 L 10 20 L 0 10 Z"
+          Stroke="Orange" 
+          StrokeThickness="1" 
+          Height="20" 
+          Canvas.Left="0" 
+          Stretch="Fill" 
+          Canvas.Top="0" 
+          Width="50">
+            <Path.Fill>
+                <SolidColorBrush x:Name="outerFlameBrush" Color="Orange"/>
+            </Path.Fill>
+        </Path>
+
+
+    </Canvas>
+
+
+</UserControl>

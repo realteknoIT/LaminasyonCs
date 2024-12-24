@@ -1,0 +1,142 @@
+﻿<Window x:Class="LaminasyonMakinesi.Loading"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
+        xmlns:local="clr-namespace:LaminasyonMakinesi"
+        mc:Ignorable="d"
+        Title="Loading" Height="1080" Width="1920"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True" 
+        MouseDown="Window_MouseDown">
+    <Grid>
+        <Image gif:AnimationBehavior.SourceUri="/View/images/1.gif" Stretch="Fill" Source="/View/images/1.gif"/>
+        <Border CornerRadius="0" Opacity="0.6">
+            <Border.Background>
+                <ImageBrush ImageSource="/View/images/background.png"
+                        Stretch="Fill"/>
+            </Border.Background>
+            <Border CornerRadius="0"
+            BorderThickness="2"
+                Opacity="0.75">
+                <Border.BorderBrush>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#462ad8" Offset="0"/>
+                        <GradientStop Color="AliceBlue" Offset="0.75"/>
+                        <GradientStop Color="#8a16c1" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                        <GradientStop Color="#060531" Offset="0"/>
+                        <GradientStop Color="#1b1448" Offset="0.75"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+        </Border>
+        <Border>
+            
+            <Grid Margin="0,0,0,0">
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+                
+                <Grid Grid.Row="0">
+                    <TextBlock Text="RealTekno Makine Otomasyon"
+                               Foreground="White"
+                               FontSize="13"
+                               FontFamily="Montserrat"
+                               Grid.Column="0"
+                               VerticalAlignment="Center"
+                               Margin="10,0,0,0" />
+                    <Button x:Name="btnClose"
+                            VerticalAlignment="Top"
+                            HorizontalAlignment="Right"
+                            Width="50"
+                            Height="25"
+                            Margin="0,1,1,0"
+                            BorderThickness="0"
+                            Content="X"
+                            Foreground="White"
+                            FontSize="13"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                            Click="btnClose_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="Transparent"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#c62b1e"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+                <StackPanel Width="650"
+                            Grid.Row="1"
+                            Orientation="Vertical"
+                            VerticalAlignment="Center"
+                            >
+                    <Image Source="/View/images/logo.png"
+                           Width="650" Height="150" Stretch="Fill"/>
+                    <TextBlock Text="REALTEKNO MAKİNE OTOMASYON"
+                               Foreground="White"
+                               FontSize="34"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               HorizontalAlignment="Center" />
+                    <TextBlock Text="LAMİNASYON MAKİNESİ"
+                               Foreground="LightGray"
+                               FontSize="30"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               HorizontalAlignment="Center" />
+                </StackPanel>
+                <Grid/>
+                
+                
+                
+                <Grid Grid.Row="2">
+                    <TextBlock x:Name="txtLoaded"
+                           Text="REALTEKNO MAKİNE OTOMASYON"
+                           Foreground="White"
+                           FontSize="13"
+                           FontWeight="Medium"
+                           FontFamily="Montserrat"
+                           HorizontalAlignment="Left"
+                           Margin="10,0,0,0" TextWrapping="Wrap"
+                           VerticalAlignment="Bottom" Height="30" Width="1748"/>
+                    <TextBlock x:Name="txtLoading"
+                           Text="Yükleniyor...."
+                           Foreground="White"
+                           FontSize="12"
+                           FontWeight="Medium"
+                           FontFamily="Montserrat"
+                           HorizontalAlignment="Right"
+                           Margin="0,0,20,0"
+                           Grid.Row="1"
+                           VerticalAlignment="Bottom"/>
+                </Grid>
+                
+                
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

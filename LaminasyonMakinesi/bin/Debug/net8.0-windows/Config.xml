@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <PlcLaminationIP>192.168.0.1</PlcLaminationIP>
+  <Server>localhost</Server>
+  <Database>Lamination1</Database>
+  <User>sa</User>
+  <Password>realtekno</Password>
+</Config>

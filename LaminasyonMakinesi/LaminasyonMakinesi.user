@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\Astar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DogSarma.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ErrorPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Anasayfa.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Kumas.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Lamination.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Loading.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Recete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Sunger.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Temizlik.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UControl\dummyArrow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UControl\Errors.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UControl\flameAnima.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UControl\spinnerSag.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UControl\textBox1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UControl\textBox2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UControl\textBox3.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UControl\waterArrow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\Astar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DogSarma.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ErrorPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Anasayfa.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Kumas.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Lamination.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Loading.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Recete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Sunger.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Temizlik.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UControl\dummyArrow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UControl\Errors.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UControl\flameAnima.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UControl\spinnerSol.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UControl\spinnerSag.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UControl\textBox1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UControl\textBox2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UControl\textBox3.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UControl\waterArrow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

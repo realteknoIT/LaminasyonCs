@@ -1,0 +1,83 @@
+﻿<Page x:Class="LaminasyonMakinesi.View.Anasayfa"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LaminasyonMakinesi.View"
+      xmlns:controls ="clr-namespace:LaminasyonMakinesi.View.UControl"
+      mc:Ignorable="d" 
+      d:DesignHeight="960" d:DesignWidth="1920" Background="Transparent"
+      Title="Anasayfa">
+
+    <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Grid.Background>
+            <ImageBrush ImageSource="/View/images/makine.png"
+                        Stretch="Uniform"
+                        Opacity="0.5"/>
+        </Grid.Background>
+
+
+
+        <controls:textBox1 x:Name="sicaklikGiris" Value="Giriş Sıcaklık" Width="100" Height="30" Margin="1165,260,655,626"  />
+        <controls:textBox1 x:Name="sicaklikCikis" Value="Çıkış Sıcaklık" Width="100" Height="30" Margin="930,228,890,658"  />
+        <controls:textBox2 x:Name="lbl_süngerDereceGiris" Unit="°C" Value="0"  Width="40" Height="17"  Margin="1189,331,691,568" />
+        <controls:textBox2 x:Name="lbl_kumasDereceGiris" Unit="°C" Value="0"  Width="40" Height="17" Margin="1189,393,691,506" />
+        <controls:textBox2 x:Name="lbl_astarDereceGiris" Unit="°C" Value="0"  Width="40" Height="17" Margin="1189,462,691,436" />
+        <controls:textBox2 x:Name="lbl_süngerDereceCikis" Unit="°C" Value="0"  Width="40" Height="17" Margin="960,299,920,600" />
+        <controls:textBox2 x:Name="lbl_kumasDereceCikis" Unit="°C" Value="0"  Width="40" Height="17" Margin="960,368,920,531" />
+        <controls:textBox2 x:Name="lbl_astarDereceCikis" Unit="°C" Value="0"  Width="40" Height="17" Margin="960,432,920,466" />
+
+        <controls:textBox3 x:Name="lbl_kumasKalinlik" Title="Kumaş Kalınlık" Unit="mm" Value="0" Width="115" Height="55" Margin="1265,293,540,568"/>
+        <controls:textBox3 x:Name="lbl_kumasBrulor" Title="Kumaş Brülor" Unit="mm" Value="0" Width="115" Height="55" Margin="1265,350,540,511"/>
+        <controls:textBox3 x:Name="lbl_astarKalinlik" Title="Astar Kalınlık" Unit="mm" Value="0" Width="115" Height="55" Margin="1265,422,540,439"/>
+        <controls:textBox3 x:Name="lbl_astarBrulor" Title="Astar Brülor" Unit="mm" Value="0" Width="115" Height="55" Margin="1265,479,540,382"/>
+
+        <controls:textBox3 x:Name="lbl_makinaHizi" Title="Makine Hızı" Unit="m/dk" Value="0" TextSize="25" Width="200" Height="100" Margin="675,727,1045,89"/>
+        <controls:textBox3 x:Name="lbl_metraj" Title="Metraj" Unit="m" Value="0" TextSize="25" Width="200" Height="100" Margin="1045,727,675,89"/>
+
+        <controls:textBox3 x:Name="süngerTansiyon1" Title="Sünger Tansiyon" Unit="kg" Value="3.25" Width="130" Height="60" Margin="300,120,1490,736" />
+        <controls:textBox3 x:Name="süngerTansiyon2" Title="Sünger Tansiyon" Unit="kg" Value="3.25" Width="130" Height="60" Margin="1007,120,783,736" />
+        <controls:textBox3 x:Name="kumasTansiyon" Title="Kumaş Tansiyon" Unit="kg" Value="3.25" Width="130" Height="60" Margin="819,120,971,736" />
+        <controls:textBox3 x:Name="astarTansiyon" Title="Astar Tansiyon" Unit="kg" Value="3.25" Width="130" Height="60" Margin="1200,120,590,736" />
+
+
+        <controls:spinnerSag x:Name="laminasyonSungerGirisSag" Width="70" Height="60" Margin="1092,310,768,546" TargetWidth="50" Visibility="Hidden" Run="false"/>
+        <controls:spinnerSol x:Name="laminasyonSungerGirisSol" Width="60" Height="60" Margin="1092,310,768,546" TargetWidth="50" Visibility="Visible" Run="false"/>
+        <controls:spinnerSag x:Name="laminasyonKumasGirisSag" Width="60" Height="60"  Margin="1092,373,768,483" TargetWidth="50" Visibility="Visible" Run="false"/>
+        <controls:spinnerSol x:Name="laminasyonKumasGirisSol" Width="60" Height="60"  Margin="1092,373,768,483" TargetWidth="50" Visibility="Hidden" Run="false"/>
+        <controls:spinnerSag x:Name="laminasyonAstarGirisSag" Width="60" Height="60"  Margin="1092,435,768,421" TargetWidth="50" Visibility="Hidden" Run="false"/>
+        <controls:spinnerSol x:Name="laminasyonAstarGirisSol" Width="60" Height="60"  Margin="1092,435,768,421" TargetWidth="50" Visibility="Visible" Run="false"/>
+
+        <controls:waterArrow x:Name="laminasyonSungerAkis" Width="80" Height="60" Margin="1041,295,799,560" Run="false"/>
+        <controls:waterArrow x:Name="laminasyonKumasAkis" Width="80" Height="60" Margin="1041,360,799,495" Run="false"/>
+        <controls:waterArrow x:Name="laminasyonAstarAkis" Width="80" Height="60" Margin="1036,419,804,436" Run="false"/>
+
+        <controls:flameAnima x:Name="kumasFlame" Margin="1059,329,853,0" Height="30" VerticalAlignment="Top" Run="True"/>
+        <controls:flameAnima x:Name="astarFlame" Margin="1152,380,760,0" Height="30" VerticalAlignment="Top" Run="True"/>
+
+        <controls:spinnerSol x:Name="sungerDog" Width="180" Height="180" Margin="96,488,1644,248" TargetWidth="180" Visibility="Visible" Run="false"/>
+        <controls:spinnerSol x:Name="kumasDog" Width="100" Height="100" Margin="610,603,1210,213" TargetWidth="100" Visibility="Visible" Run="false"/>
+        <controls:spinnerSol x:Name="lamineliDog" Width="120" Height="120" Margin="1787,440,13,356" TargetWidth="120" Visibility="Visible" Run="false"/>
+        <controls:spinnerSol x:Name="astarDog" Width="80" Height="80" Margin="1210,534,630,302" TargetWidth="80" Visibility="Visible" Run="false"/>
+
+
+        <controls:dummyArrow x:Name="dummyarrow1" Width="70" Height="20" Margin="849,488,1001,408" RenderTransformOrigin="0.5,0.5" Run="false">
+            <controls:dummyArrow.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </controls:dummyArrow.RenderTransform>
+        </controls:dummyArrow>
+        <controls:dummyArrow x:Name="dummyarrow2" Width="70" Height="20" Margin="590,213,1260,683" RenderTransformOrigin="0.5,0.5" Run="false"/>
+        <controls:dummyArrow x:Name="dummyarrow3" Width="70" Height="20" Margin="910,203,940,693" RenderTransformOrigin="0.5,0.5" Run="false"/>
+        <controls:dummyArrow x:Name="dummyarrow4" Width="70" Height="20" Margin="976,658,874,238" RenderTransformOrigin="0.5,0.5" Run="false"/>
+        <controls:dummyArrow x:Name="dummyarrow5" Width="70" Height="20" Margin="1215,653,635,243" RenderTransformOrigin="0.5,0.5" Run="false"/>
+        <controls:dummyArrow x:Name="dummyarrow6" Width="70" Height="20" Margin="1394,514,456,382" RenderTransformOrigin="0.5,0.5" Run="false"/>
+
+
+    </Grid>
+
+</Page>
