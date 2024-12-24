@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:LaminasyonMakinesi.View"
+      xmlns:controls ="clr-namespace:LaminasyonMakinesi.View.UControl"
       mc:Ignorable="d" 
       d:DesignHeight="960" d:DesignWidth="1920" Background="Transparent"
       Title="Sunger">
@@ -14,6 +15,25 @@
                         Stretch="Uniform"
                         Opacity="0.5"/>
         </Grid.Background>
+
+        <controls:textBox3        x:Name="lbl_ısıtmaSuresi1"               Title="Isıtma Süresi"  Width="150" Height="60" Unit="sn" Value="0" Margin="532,443,1238,457"  MouseDown="ısıtmaSuresi1_MouseDown" Cursor="Hand"/>
+        <controls:whiteArrow      x:Name="ısıtmaSuresiKontrolArrowUp1"     Width="80" Height="80" Margin="687,392,1153,488"/>
+        <controls:whiteArrowDown  x:Name="ısıtmaSuresiKontrolArrowDown1"   Width="80" Height="80" Margin="687,477,1153,403"/>
+
+        <controls:textBox3        x:Name="lbl_sogutmaSuresi1"              Title="Soğutma Süresi" Width="150" Height="60" Unit="sn" Value="0" Margin="532,634,1238,266"  MouseDown="sogutmaSuresi1_MouseDown" Cursor="Hand"/>
+        <controls:whiteArrow      x:Name="sogutmaSuresiKontrolArrowUp1"    Width="80" Height="80" Margin="687,584,1153,296"                                              MouseDown="sogutmaSuresiKontrolArrowUp1_MouseDown" />
+        <controls:whiteArrowDown  x:Name="sogutmaSuresiKontrolArrowDown1"  Width="80" Height="80" Margin="687,669,1153,211"                                              MouseDown="sogutmaSuresiKontrolArrowDown1_MouseDown" />
+
+        <controls:textBox1        x:Name="cekiciMotorKontrol1"                 Value="Çekici Motor Manual Kontrol" Width="200"  Height="30" Margin="43,244,1677,686" />
+        <controls:whiteArrowLeft  x:Name="lbl_cekiciMotorKontrolArrowLeft1"    Width="80" Height="80" Margin="61,279,1779,601"                                           MouseDown="cekiciMotorKontrolArrowLeft_MouseDown1" Cursor="Hand"/>
+        <controls:whiteArrowRight x:Name="cekiciMotorKontrolArrowRight1"       Width="80" Height="80" Margin="150,279,1690,601"                                          MouseDown="cekiciMotorKontrolArrowRight_MouseDown1" Cursor="Hand"/>
+
+        <controls:textBox3        x:Name="tansiyon"                       Title="Tansiyon"         Width="150" Height="60" Unit="V" Value="0" Margin="532,319,1238,581"/>
+
+        <controls:textBox3        x:Name="loadcellDegeri"                 Title="Loadcell Değeri"  Width="150" Height="60" Unit="kg" Value="0" Margin="1611,68,159,832"/>
+
+
+
 
     </Grid>
 </Page>

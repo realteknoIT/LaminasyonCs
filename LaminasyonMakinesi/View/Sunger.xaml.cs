@@ -24,5 +24,71 @@ namespace LaminasyonMakinesi.View
         {
             InitializeComponent();
         }
+
+        private void ısıtmaSuresi1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            KeyPad keyPad = new KeyPad();
+
+            if (keyPad.ShowDialog() == true)
+            {
+                string girilenDeger = keyPad.GirilenDeger;
+
+                lbl_ısıtmaSuresi1.Value = girilenDeger;
+            }
+        }
+
+        private void ısıtmaSuresiKontrolArrowUp1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            int currentValue = int.Parse(lbl_ısıtmaSuresi1.Value.ToString());
+
+            lbl_ısıtmaSuresi1.Value = (currentValue + 5).ToString();
+        }
+
+        private void ısıtmaSuresiKontrolArrowDown1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            int currentValue = int.Parse(lbl_ısıtmaSuresi1.Value.ToString());
+
+            lbl_ısıtmaSuresi1.Value = (currentValue - 5).ToString();
+        }
+        
+        private void sogutmaSuresi1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            KeyPad keyPad = new KeyPad();
+
+            if (keyPad.ShowDialog() == true)
+            {
+                string girilenDeger = keyPad.GirilenDeger;
+
+                lbl_sogutmaSuresi1.Value = girilenDeger;
+            }
+        }
+
+        private void sogutmaSuresiKontrolArrowUp1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            int currentValue = int.Parse(lbl_ısıtmaSuresi1.Value.ToString());
+
+            lbl_sogutmaSuresi1.Value = (currentValue + 5).ToString();
+        }
+
+        private void sogutmaSuresiKontrolArrowDown1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            int currentValue = int.Parse(lbl_ısıtmaSuresi1.Value.ToString());
+
+            lbl_sogutmaSuresi1.Value = (currentValue - 5).ToString();
+        }
+
+        private void cekiciMotorKontrolArrowLeft1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            int currentValue = int.Parse(cekiciMotorKontrol1.Value.ToString());
+
+            cekiciMotorKontrol1.Value = (currentValue + 5).ToString();
+        }
+
+        private void cekiciMotorKontrolArrowRight1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            int currentValue = int.Parse(cekiciMotorKontrol1.Value.ToString());
+
+            cekiciMotorKontrol1.Value = (currentValue - 5).ToString();
+        }
     }
 }
