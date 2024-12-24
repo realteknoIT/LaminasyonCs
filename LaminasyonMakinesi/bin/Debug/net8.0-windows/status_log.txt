@@ -84,3 +84,13 @@
 2024-12-24 14:52:05 - Kumaş tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
 2024-12-24 14:52:08 - Sünger tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
 2024-12-24 14:52:11 - Kullanıcılar tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 15:06:40 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
+2024-12-24 15:16:57 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
+2024-12-24 15:22:58 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
+2024-12-24 15:37:45 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
+2024-12-24 15:50:32 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
+2024-12-24 16:16:52 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
+2024-12-24 16:26:34 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
+2024-12-24 16:36:59 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
+2024-12-24 16:40:39 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
+2024-12-24 16:41:27 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.

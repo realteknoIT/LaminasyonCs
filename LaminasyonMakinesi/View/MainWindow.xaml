@@ -18,7 +18,7 @@
         <Border CornerRadius="0" Opacity="0.85">
             <Border.Background>
                 <ImageBrush ImageSource="/View/images/background2.png"
-                        Stretch="fill"/>
+                            Stretch="fill"/>
             </Border.Background>
         </Border>
         <Border>
@@ -36,18 +36,12 @@
                             HorizontalAlignment="Right"
                             Margin="10,10,1690,0"
                             Cursor="Hand"
-                            MouseDown="btnClose_Click"
-                            />
-
-
+                            MouseDown="btnClose_Click"/>
                 </Grid>
                 <StackPanel Grid.Row="1"
                             Orientation="Vertical"
                             Margin="0,10,0,10">
-
                     <Frame x:Name="Pages" Source="/View/Anasayfa.xaml" NavigationUIVisibility="Hidden" Height="916" Navigated="MainFrame_Navigated"/>
-
-
                 </StackPanel>
                 <Grid/>
                 <Grid Grid.Row="2"
@@ -63,10 +57,11 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
+                    <!-- ANASAYFA Butonu -->
                     <Button x:Name="btnAnasayfa"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Center"
-                            Width="220"
+                            Width="240"
                             Height="80"
                             Grid.Column="0"
                             Margin="0,0,0,0"
@@ -85,6 +80,9 @@
                                     <Trigger Property="IsMouseOver" Value="True">
                                         <Setter Property="Background" Value="#c62b1e"/>
                                     </Trigger>
+                                    <DataTrigger Binding="{Binding ActivePage}" Value="btnAnasayfa">
+                                        <Setter Property="Background" Value="#c62b1e"/>
+                                    </DataTrigger>
                                 </Style.Triggers>
                             </Style>
                         </Button.Style>
@@ -97,10 +95,12 @@
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
+
+                    <!-- LAMİNASYON Butonu -->
                     <Button x:Name="btnLaminasyon"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Center"
-                            Width="220"
+                            Width="240"
                             Height="80"
                             Grid.Column="1"
                             Margin="0,0,0,0"
@@ -119,6 +119,9 @@
                                     <Trigger Property="IsMouseOver" Value="True">
                                         <Setter Property="Background" Value="#c62b1e"/>
                                     </Trigger>
+                                    <DataTrigger Binding="{Binding ActivePage}" Value="btnLaminasyon">
+                                        <Setter Property="Background" Value="#c62b1e"/>
+                                    </DataTrigger>
                                 </Style.Triggers>
                             </Style>
                         </Button.Style>
@@ -131,10 +134,12 @@
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
+
+                    <!-- SÜNGER Butonu -->
                     <Button x:Name="btnSunger"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Center"
-                            Width="220"
+                            Width="240"
                             Height="80"
                             Grid.Column="2"
                             Margin="0,0,0,0"
@@ -153,6 +158,9 @@
                                     <Trigger Property="IsMouseOver" Value="True">
                                         <Setter Property="Background" Value="#c62b1e"/>
                                     </Trigger>
+                                    <DataTrigger Binding="{Binding ActivePage}" Value="btnSunger">
+                                        <Setter Property="Background" Value="#c62b1e"/>
+                                    </DataTrigger>
                                 </Style.Triggers>
                             </Style>
                         </Button.Style>
@@ -165,10 +173,12 @@
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
+
+                    <!-- ASTAR Butonu -->
                     <Button x:Name="btnAstar"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Center"
-                            Width="220"
+                            Width="240"
                             Height="80"
                             Grid.Column="3"
                             Margin="0,0,0,0"
@@ -187,6 +197,9 @@
                                     <Trigger Property="IsMouseOver" Value="True">
                                         <Setter Property="Background" Value="#c62b1e"/>
                                     </Trigger>
+                                    <DataTrigger Binding="{Binding ActivePage}" Value="btnAstar">
+                                        <Setter Property="Background" Value="#c62b1e"/>
+                                    </DataTrigger>
                                 </Style.Triggers>
                             </Style>
                         </Button.Style>
@@ -199,10 +212,12 @@
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
+
+                    <!-- KUMAŞ Butonu -->
                     <Button x:Name="btnKumas"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Center"
-                            Width="220"
+                            Width="240"
                             Height="80"
                             Grid.Column="4"
                             Margin="0,0,0,0"
@@ -221,6 +236,9 @@
                                     <Trigger Property="IsMouseOver" Value="True">
                                         <Setter Property="Background" Value="#c62b1e"/>
                                     </Trigger>
+                                    <DataTrigger Binding="{Binding ActivePage}" Value="btnKumas">
+                                        <Setter Property="Background" Value="#c62b1e"/>
+                                    </DataTrigger>
                                 </Style.Triggers>
                             </Style>
                         </Button.Style>
@@ -233,10 +251,12 @@
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
+
+                    <!-- DOG SARMA Butonu -->
                     <Button x:Name="btnDogSarma"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Center"
-                            Width="220"
+                            Width="240"
                             Height="80"
                             Grid.Column="5"
                             Margin="0,0,0,0"
@@ -255,6 +275,9 @@
                                     <Trigger Property="IsMouseOver" Value="True">
                                         <Setter Property="Background" Value="#c62b1e"/>
                                     </Trigger>
+                                    <DataTrigger Binding="{Binding ActivePage}" Value="btnDogSarma">
+                                        <Setter Property="Background" Value="#c62b1e"/>
+                                    </DataTrigger>
                                 </Style.Triggers>
                             </Style>
                         </Button.Style>
@@ -267,10 +290,12 @@
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
+
+                    <!-- REÇETE Butonu -->
                     <Button x:Name="btnRecete"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Center"
-                            Width="220"
+                            Width="240"
                             Height="80"
                             Grid.Column="6"
                             Margin="0,0,0,0"
@@ -289,6 +314,9 @@
                                     <Trigger Property="IsMouseOver" Value="True">
                                         <Setter Property="Background" Value="#c62b1e"/>
                                     </Trigger>
+                                    <DataTrigger Binding="{Binding ActivePage}" Value="btnRecete">
+                                        <Setter Property="Background" Value="#c62b1e"/>
+                                    </DataTrigger>
                                 </Style.Triggers>
                             </Style>
                         </Button.Style>
@@ -301,10 +329,12 @@
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
+
+                    <!-- BAKIM Butonu -->
                     <Button x:Name="btnBakim"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Center"
-                            Width="220"
+                            Width="240"
                             Height="80"
                             Grid.Column="7"
                             Margin="0,0,0,0"
@@ -323,6 +353,9 @@
                                     <Trigger Property="IsMouseOver" Value="True">
                                         <Setter Property="Background" Value="#c62b1e"/>
                                     </Trigger>
+                                    <DataTrigger Binding="{Binding ActivePage}" Value="btnBakim">
+                                        <Setter Property="Background" Value="#c62b1e"/>
+                                    </DataTrigger>
                                 </Style.Triggers>
                             </Style>
                         </Button.Style>
@@ -335,8 +368,6 @@
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
-
-
                 </Grid>
             </Grid>
         </Border>
