@@ -16,3 +16,71 @@
 2024-12-23 14:47:57 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
 2024-12-23 14:48:01 - Receteler tablosuna veri ekleme sırasında bir hata oluştu: There is already an open DataReader associated with this Command which must be closed first.
 2024-12-23 14:51:16 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
+2024-12-24 14:44:37 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
+2024-12-24 14:44:48 - Veritabanı oluşturma sırasında bir hata oluştu: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2024-12-24 14:45:00 - Veritabanına bağlanırken bir hata oluştu: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2024-12-24 14:45:03 - Tablo oluşturma sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:45:06 - Tablo oluşturma sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:45:09 - Tablo oluşturma sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:45:12 - Tablo oluşturma sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:45:15 - Kullanıcı tablosu  oluşturma sırasında bir hata oluştu: System.InvalidOperationException: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+   at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LaminasyonMakinesi.Loading.CheckAndCreateTables() in C:\Users\REALTEKNO_ıT2\Desktop\GitHub\LaminasyonCs\LaminasyonMakinesi\View\Loading.xaml.cs:line 299
+2024-12-24 14:45:18 - Receteler tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:45:21 - Astar tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:45:24 - Kumaş tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:45:27 - Sünger tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:45:30 - Kullanıcılar tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:46:57 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
+2024-12-24 14:47:08 - Veritabanı oluşturma sırasında bir hata oluştu: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2024-12-24 14:47:19 - Veritabanına bağlanırken bir hata oluştu: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2024-12-24 14:47:22 - Tablo oluşturma sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:47:26 - Tablo oluşturma sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:47:29 - Tablo oluşturma sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:47:32 - Tablo oluşturma sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:47:35 - Kullanıcı tablosu  oluşturma sırasında bir hata oluştu: System.InvalidOperationException: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+   at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LaminasyonMakinesi.Loading.CheckAndCreateTables() in C:\Users\REALTEKNO_ıT2\Desktop\GitHub\LaminasyonCs\LaminasyonMakinesi\View\Loading.xaml.cs:line 299
+2024-12-24 14:47:38 - Receteler tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:47:41 - Astar tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:47:44 - Kumaş tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:47:47 - Sünger tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:47:50 - Kullanıcılar tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:49:08 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
+2024-12-24 14:49:20 - Veritabanı oluşturma sırasında bir hata oluştu: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2024-12-24 14:49:31 - Veritabanına bağlanırken bir hata oluştu: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2024-12-24 14:49:34 - Tablo oluşturma sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:49:37 - Tablo oluşturma sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:49:40 - Tablo oluşturma sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:49:43 - Tablo oluşturma sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:49:46 - Kullanıcı tablosu  oluşturma sırasında bir hata oluştu: System.InvalidOperationException: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+   at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LaminasyonMakinesi.Loading.CheckAndCreateTables() in C:\Users\REALTEKNO_ıT2\Desktop\GitHub\LaminasyonCs\LaminasyonMakinesi\View\Loading.xaml.cs:line 299
+2024-12-24 14:49:50 - Receteler tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:49:53 - Astar tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:49:56 - Kumaş tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:49:59 - Sünger tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:50:02 - Kullanıcılar tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:51:18 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
+2024-12-24 14:51:29 - Veritabanı oluşturma sırasında bir hata oluştu: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2024-12-24 14:51:41 - Veritabanına bağlanırken bir hata oluştu: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+2024-12-24 14:51:44 - Tablo oluşturma sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:51:47 - Tablo oluşturma sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:51:50 - Tablo oluşturma sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:51:53 - Tablo oluşturma sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:51:56 - Kullanıcı tablosu  oluşturma sırasında bir hata oluştu: System.InvalidOperationException: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+   at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at LaminasyonMakinesi.Loading.CheckAndCreateTables() in C:\Users\REALTEKNO_ıT2\Desktop\GitHub\LaminasyonCs\LaminasyonMakinesi\View\Loading.xaml.cs:line 299
+2024-12-24 14:51:59 - Receteler tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:52:02 - Astar tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:52:05 - Kumaş tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:52:08 - Sünger tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+2024-12-24 14:52:11 - Kullanıcılar tablosuna veri ekleme sırasında bir hata oluştu: ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.

@@ -25,8 +25,8 @@
         <controls:whiteArrowDown  x:Name="sogutmaSuresiKontrolArrowDown1"  Width="80" Height="80" Margin="687,669,1153,211"                                              MouseDown="sogutmaSuresiKontrolArrowDown1_MouseDown" />
 
         <controls:textBox1        x:Name="cekiciMotorKontrol1"                 Value="Çekici Motor Manual Kontrol" Width="200"  Height="30" Margin="43,244,1677,686" />
-        <controls:whiteArrowLeft  x:Name="lbl_cekiciMotorKontrolArrowLeft1"    Width="80" Height="80" Margin="61,279,1779,601"                                           MouseDown="cekiciMotorKontrolArrowLeft_MouseDown1" Cursor="Hand"/>
-        <controls:whiteArrowRight x:Name="cekiciMotorKontrolArrowRight1"       Width="80" Height="80" Margin="150,279,1690,601"                                          MouseDown="cekiciMotorKontrolArrowRight_MouseDown1" Cursor="Hand"/>
+        <controls:whiteArrowLeft  x:Name="lbl_cekiciMotorKontrolArrowLeft1"    Width="80" Height="80" Margin="61,279,1779,601"                                           MouseDown="cekiciMotorKontrolArrowLeft1_MouseDown" Cursor="Hand"/>
+        <controls:whiteArrowRight x:Name="cekiciMotorKontrolArrowRight1"       Width="80" Height="80" Margin="150,279,1690,601"                                          MouseDown="cekiciMotorKontrolArrowRight1_MouseDown" Cursor="Hand"/>
 
         <controls:textBox3        x:Name="tansiyon"                       Title="Tansiyon"         Width="150" Height="60" Unit="V" Value="0" Margin="532,319,1238,581"/>
 

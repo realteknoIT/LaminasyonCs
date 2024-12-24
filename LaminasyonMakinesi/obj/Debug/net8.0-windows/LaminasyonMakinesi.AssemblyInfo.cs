@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Realtekno Makina Otomasyon")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e29fcf3eda0a5079f13b31df37b1c485a516a3a7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+763580ab83d754ff9af21fc793053a58185d49f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("LaminasyonMakinesi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LaminasyonMakinesi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

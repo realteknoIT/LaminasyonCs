@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\RT-Monster\Desktop\LaminasyonC#\LaminasyonC-\LaminasyonMakinesi\obj\Debug\net8.0-windows\
+C:\Users\REALTEKNO_ıT2\Desktop\GitHub\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\
 LaminasyonMakinesi
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\RT-Monster\Desktop\LaminasyonC#\LaminasyonC-\LaminasyonMakinesi\App.xaml
-25-140704504
+C:\Users\REALTEKNO_ıT2\Desktop\GitHub\LaminasyonCs\LaminasyonMakinesi\App.xaml
+31975386551
 1-913308027
-37-1069142568
-210-345370799
-View\Anasayfa.xaml;View\Astar.xaml;View\DogSarma.xaml;View\ErrorPage.xaml;View\KeyPad.xaml;View\Kumas.xaml;View\Lamination.xaml;View\Loading.xaml;View\LoginPage.xaml;View\MainWindow.xaml;View\Message.xaml;View\Recete.xaml;View\Sunger.xaml;View\Temizlik.xaml;View\UControl\dummyArrow.xaml;View\UControl\Errors.xaml;View\UControl\flameAnima.xaml;View\UControl\loginBtn.xaml;View\UControl\spinnerSag.xaml;View\UControl\spinnerSol.xaml;View\UControl\textBox1.xaml;View\UControl\textBox2.xaml;View\UControl\textBox3.xaml;View\UControl\TextGroup.xaml;View\UControl\waterArrow.xaml;
+43-2126788719
+210-860346105
+View\Anasayfa.xaml;View\Astar.xaml;View\DogSarma.xaml;View\ErrorPage.xaml;View\KeyPad.xaml;View\Kumas.xaml;View\Lamination.xaml;View\Loading.xaml;View\LoginPage.xaml;View\MainWindow.xaml;View\Message.xaml;View\Recete.xaml;View\Sunger.xaml;View\Temizlik.xaml;View\UControl\dummyArrow.xaml;View\UControl\durumBilgisi.xaml;View\UControl\Errors.xaml;View\UControl\flameAnima.xaml;View\UControl\loginBtn.xaml;View\UControl\onOff.xaml;View\UControl\spinnerSag.xaml;View\UControl\spinnerSol.xaml;View\UControl\textBox1.xaml;View\UControl\textBox2.xaml;View\UControl\textBox3.xaml;View\UControl\TextGroup.xaml;View\UControl\waterArrow.xaml;View\UControl\whiteArrow.xaml;View\UControl\whiteArrowDown.xaml;View\UControl\whiteArrowLeft.xaml;View\UControl\whiteArrowRight.xaml;
 
-False
+True
 
