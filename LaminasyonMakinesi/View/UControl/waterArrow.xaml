@@ -1,50 +1,86 @@
-﻿<UserControl x:Class="LaminasyonMakinesi.View.UControl.waterArrow"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:LaminasyonMakinesi.View.UControl"
-             mc:Ignorable="d" Width="80" Height="61">
+﻿<UserControl
+    x:Class="LaminasyonMakinesi.View.UControl.waterArrow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:LaminasyonMakinesi.View.UControl"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="80"
+    Height="61"
+    mc:Ignorable="d">
     <UserControl.Resources>
-        <Storyboard x:Key="MoveStoryboard" RepeatBehavior="Forever" Timeline.DesiredFrameRate="5">
-                    <!-- İlk Ok Animasyonu -->
-                    <DoubleAnimation Storyboard.TargetName="arrowTransform1"
-                                     Storyboard.TargetProperty="X"
-                                     From="50" To="0" Duration="0:0:1"/>
-                    <ColorAnimation Storyboard.TargetName="arrowBrush1"
-                                    Storyboard.TargetProperty="Color"
-                                    From="#FF079AF7" To="Red" Duration="0:0:1" />
+        <Storyboard
+            x:Key="MoveStoryboard"
+            RepeatBehavior="Forever"
+            Timeline.DesiredFrameRate="5">
+            <!--  İlk Ok Animasyonu  -->
+            <DoubleAnimation
+                Storyboard.TargetName="arrowTransform1"
+                Storyboard.TargetProperty="X"
+                From="50"
+                To="0"
+                Duration="0:0:1" />
+            <ColorAnimation
+                Storyboard.TargetName="arrowBrush1"
+                Storyboard.TargetProperty="Color"
+                From="#FF079AF7"
+                To="Red"
+                Duration="0:0:1" />
 
-                    <!-- İkinci Ok Animasyonu -->
-                    <DoubleAnimation Storyboard.TargetName="arrowTransform2"
-                                     Storyboard.TargetProperty="X"
-                                     From="50" To="0" Duration="0:0:1"/>
-                    <ColorAnimation Storyboard.TargetName="arrowBrush2"
-                                    Storyboard.TargetProperty="Color"
-                                    From="#FF079AF7" To="Red" Duration="0:0:1" />
+            <!--  İkinci Ok Animasyonu  -->
+            <DoubleAnimation
+                Storyboard.TargetName="arrowTransform2"
+                Storyboard.TargetProperty="X"
+                From="50"
+                To="0"
+                Duration="0:0:1" />
+            <ColorAnimation
+                Storyboard.TargetName="arrowBrush2"
+                Storyboard.TargetProperty="Color"
+                From="#FF079AF7"
+                To="Red"
+                Duration="0:0:1" />
 
-                    <!-- Üçüncü Ok Animasyonu -->
-                    <DoubleAnimation Storyboard.TargetName="arrowTransform3"
-                                     Storyboard.TargetProperty="X"
-                                     From="50" To="0" Duration="0:0:1"/>
-                    <ColorAnimation Storyboard.TargetName="arrowBrush3"
-                                    Storyboard.TargetProperty="Color"
-                                    From="#FF079AF7" To="Red" Duration="0:0:1" />
-                </Storyboard>
+            <!--  Üçüncü Ok Animasyonu  -->
+            <DoubleAnimation
+                Storyboard.TargetName="arrowTransform3"
+                Storyboard.TargetProperty="X"
+                From="50"
+                To="0"
+                Duration="0:0:1" />
+            <ColorAnimation
+                Storyboard.TargetName="arrowBrush3"
+                Storyboard.TargetProperty="Color"
+                From="#FF079AF7"
+                To="Red"
+                Duration="0:0:1" />
+        </Storyboard>
     </UserControl.Resources>
 
-    <Canvas Width="76" Height="51" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,-13,0,0">
+    <Canvas
+        Width="76"
+        Height="51"
+        Margin="10,-13,0,0"
+        HorizontalAlignment="Left"
+        VerticalAlignment="Top">
         <Canvas.RenderTransform>
             <TransformGroup>
-                <ScaleTransform/>
-                <SkewTransform/>
-                <RotateTransform Angle="20"/>
-                <TranslateTransform/>
+                <ScaleTransform />
+                <SkewTransform />
+                <RotateTransform Angle="20" />
+                <TranslateTransform />
             </TransformGroup>
         </Canvas.RenderTransform>
 
-        <!-- İlk Ok -->
-        <TextBlock Text="&#8592;" FontSize="20" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Canvas.Left="0" Canvas.Top="0">
+        <!--  İlk Ok  -->
+        <TextBlock
+            Canvas.Left="0"
+            Canvas.Top="0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="20"
+            FontWeight="Bold"
+            Text="&#8592;">
             <TextBlock.RenderTransform>
                 <TranslateTransform x:Name="arrowTransform1" />
             </TextBlock.RenderTransform>
@@ -53,8 +89,15 @@
             </TextBlock.Foreground>
         </TextBlock>
 
-        <!-- İkinci Ok -->
-        <TextBlock Text="&#8592;" FontSize="20" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Canvas.Left="0" Canvas.Top="10">
+        <!--  İkinci Ok  -->
+        <TextBlock
+            Canvas.Left="0"
+            Canvas.Top="10"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="20"
+            FontWeight="Bold"
+            Text="&#8592;">
             <TextBlock.RenderTransform>
                 <TranslateTransform x:Name="arrowTransform2" />
             </TextBlock.RenderTransform>
@@ -63,8 +106,15 @@
             </TextBlock.Foreground>
         </TextBlock>
 
-        <!-- Üçüncü Ok -->
-        <TextBlock Text="&#8592;" FontSize="20" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Canvas.Left="0" Canvas.Top="20">
+        <!--  Üçüncü Ok  -->
+        <TextBlock
+            Canvas.Left="0"
+            Canvas.Top="20"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="20"
+            FontWeight="Bold"
+            Text="&#8592;">
             <TextBlock.RenderTransform>
                 <TranslateTransform x:Name="arrowTransform3" />
             </TextBlock.RenderTransform>

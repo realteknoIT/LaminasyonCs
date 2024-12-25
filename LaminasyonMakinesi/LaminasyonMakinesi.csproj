@@ -12,6 +12,8 @@
     <Copyright>Realtekno Makina Otomasyon</Copyright>
     <PackageIcon></PackageIcon>
     <StartupObject>LaminasyonMakinesi.App</StartupObject>
+    <PlatformTarget>x64</PlatformTarget>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -37,14 +39,6 @@
     <Page Remove="ViewModel\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Remove="View\UControl\dummyArrow.cs" />
-    <Compile Remove="View\UControl\dummyArrow.Designer.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Remove="View\UControl\dummyArrow.resx" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Remove="View\0.gif" />
@@ -99,10 +93,5 @@
     <Resource Include="View\images\sunger.png" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Update="View\UControl\spinnerSol.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
 
 </Project>

@@ -9,3 +9,4 @@ global using Application = System.Windows.Application;
 global using Button = System.Windows.Controls.Button;
 global using MessageBox = System.Windows.MessageBox;
 global using Color = System.Windows.Media.Color;
+global using LaminasyonMakinesi.View.UControl;

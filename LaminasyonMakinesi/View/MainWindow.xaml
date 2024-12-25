@@ -1,87 +1,96 @@
-﻿<Window x:Class="LaminasyonMakinesi.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:LaminasyonMakinesi"
-        xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
-        xmlns:controls="clr-namespace:LaminasyonMakinesi.View.UControl"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="1080" Width="1920"
-        WindowStyle="None"
-        ResizeMode="NoResize"
-        WindowStartupLocation="CenterScreen"
-        Background="DarkBlue"
-        AllowsTransparency="True"
-        MouseDown="Window_MouseDown">
+﻿<Window
+    x:Class="LaminasyonMakinesi.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:LaminasyonMakinesi.View.UControl"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
+    xmlns:local="clr-namespace:LaminasyonMakinesi"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="1920"
+    Height="1080"
+    AllowsTransparency="True"
+    Background="DarkBlue"
+    MouseDown="Window_MouseDown"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
     <Grid>
         <Border CornerRadius="0" Opacity="0.85">
             <Border.Background>
-                <ImageBrush ImageSource="/View/images/background2.png"
-                            Stretch="fill"/>
+                <ImageBrush ImageSource="/View/images/background2.png" Stretch="fill" />
             </Border.Background>
         </Border>
         <Border>
             <Grid Margin="0,0,0,0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="60"/>
-                    <RowDefinition/>
-                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="60" />
+                    <RowDefinition />
+                    <RowDefinition Height="80" />
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
-                    <Image Source="/View/images/logo.png"
-                            Height="50"
-                            Stretch="Uniform"
-                            VerticalAlignment="Top"
-                            HorizontalAlignment="Right"
-                            Margin="10,10,1690,0"
-                            Cursor="Hand"
-                            MouseDown="btnClose_Click"/>
+                    <Image
+                        Height="50"
+                        Margin="10,10,1690,0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Top"
+                        Cursor="Hand"
+                        MouseDown="btnClose_Click"
+                        Source="/View/images/logo.png"
+                        Stretch="Uniform" />
                 </Grid>
-                <StackPanel Grid.Row="1"
-                            Orientation="Vertical"
-                            Margin="0,10,0,10">
-                    <Frame x:Name="Pages" Source="/View/Anasayfa.xaml" NavigationUIVisibility="Hidden" Height="916" Navigated="MainFrame_Navigated"/>
+                <StackPanel
+                    Grid.Row="1"
+                    Margin="0,10,0,10"
+                    Orientation="Vertical">
+                    <Frame
+                        x:Name="Pages"
+                        Height="916"
+                        Navigated="MainFrame_Navigated"
+                        NavigationUIVisibility="Hidden"
+                        Source="/View/Anasayfa.xaml" />
                 </StackPanel>
-                <Grid/>
-                <Grid Grid.Row="2"
-                      Background="Black">
+                <Grid />
+                <Grid Grid.Row="2" Background="Black">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
                     </Grid.ColumnDefinitions>
 
-                    <!-- ANASAYFA Butonu -->
-                    <Button x:Name="btnAnasayfa"
-                            VerticalAlignment="Center"
-                            HorizontalAlignment="Center"
-                            Width="240"
-                            Height="80"
-                            Grid.Column="0"
-                            Margin="0,0,0,0"
-                            BorderThickness="0"
-                            Content="ANASAYFA"
-                            Foreground="White"
-                            FontWeight="Bold"
-                            FontSize="20"
-                            FontFamily="Montserrat"
-                            Cursor="Hand"
-                            Click="btnNavbar_Click">
+                    <!--  ANASAYFA Butonu  -->
+                    <Button
+                        x:Name="btnAnasayfa"
+                        Grid.Column="0"
+                        Width="240"
+                        Height="80"
+                        Margin="0,0,0,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        BorderThickness="0"
+                        Click="btnNavbar_Click"
+                        Content="ANASAYFA"
+                        Cursor="Hand"
+                        FontFamily="Montserrat"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="White">
                         <Button.Style>
                             <Style TargetType="Button">
-                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="Background" Value="Transparent" />
                                 <Style.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#c62b1e"/>
+                                        <Setter Property="Background" Value="#c62b1e" />
                                     </Trigger>
                                     <DataTrigger Binding="{Binding ActivePage}" Value="btnAnasayfa">
-                                        <Setter Property="Background" Value="#c62b1e"/>
+                                        <Setter Property="Background" Value="#c62b1e" />
                                     </DataTrigger>
                                 </Style.Triggers>
                             </Style>
@@ -89,38 +98,38 @@
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border Background="{TemplateBinding Background}">
-                                    <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                                 </Border>
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
 
-                    <!-- LAMİNASYON Butonu -->
-                    <Button x:Name="btnLaminasyon"
-                            VerticalAlignment="Center"
-                            HorizontalAlignment="Center"
-                            Width="240"
-                            Height="80"
-                            Grid.Column="1"
-                            Margin="0,0,0,0"
-                            BorderThickness="0"
-                            Content="LAMİNASYON"
-                            Foreground="White"
-                            FontWeight="Bold"
-                            FontSize="20"
-                            FontFamily="Montserrat"
-                            Cursor="Hand"
-                            Click="btnNavbar_Click">
+                    <!--  LAMİNASYON Butonu  -->
+                    <Button
+                        x:Name="btnLaminasyon"
+                        Grid.Column="1"
+                        Width="240"
+                        Height="80"
+                        Margin="0,0,0,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        BorderThickness="0"
+                        Click="btnNavbar_Click"
+                        Content="LAMİNASYON"
+                        Cursor="Hand"
+                        FontFamily="Montserrat"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="White">
                         <Button.Style>
                             <Style TargetType="Button">
-                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="Background" Value="Transparent" />
                                 <Style.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#c62b1e"/>
+                                        <Setter Property="Background" Value="#c62b1e" />
                                     </Trigger>
                                     <DataTrigger Binding="{Binding ActivePage}" Value="btnLaminasyon">
-                                        <Setter Property="Background" Value="#c62b1e"/>
+                                        <Setter Property="Background" Value="#c62b1e" />
                                     </DataTrigger>
                                 </Style.Triggers>
                             </Style>
@@ -128,38 +137,38 @@
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border Background="{TemplateBinding Background}">
-                                    <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                                 </Border>
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
 
-                    <!-- SÜNGER Butonu -->
-                    <Button x:Name="btnSunger"
-                            VerticalAlignment="Center"
-                            HorizontalAlignment="Center"
-                            Width="240"
-                            Height="80"
-                            Grid.Column="2"
-                            Margin="0,0,0,0"
-                            BorderThickness="0"
-                            Content="SÜNGER"
-                            Foreground="White"
-                            FontWeight="Bold"
-                            FontSize="20"
-                            FontFamily="Montserrat"
-                            Cursor="Hand"
-                            Click="btnNavbar_Click">
+                    <!--  SÜNGER Butonu  -->
+                    <Button
+                        x:Name="btnSunger"
+                        Grid.Column="2"
+                        Width="240"
+                        Height="80"
+                        Margin="0,0,0,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        BorderThickness="0"
+                        Click="btnNavbar_Click"
+                        Content="SÜNGER"
+                        Cursor="Hand"
+                        FontFamily="Montserrat"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="White">
                         <Button.Style>
                             <Style TargetType="Button">
-                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="Background" Value="Transparent" />
                                 <Style.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#c62b1e"/>
+                                        <Setter Property="Background" Value="#c62b1e" />
                                     </Trigger>
                                     <DataTrigger Binding="{Binding ActivePage}" Value="btnSunger">
-                                        <Setter Property="Background" Value="#c62b1e"/>
+                                        <Setter Property="Background" Value="#c62b1e" />
                                     </DataTrigger>
                                 </Style.Triggers>
                             </Style>
@@ -167,38 +176,38 @@
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border Background="{TemplateBinding Background}">
-                                    <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                                 </Border>
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
 
-                    <!-- ASTAR Butonu -->
-                    <Button x:Name="btnAstar"
-                            VerticalAlignment="Center"
-                            HorizontalAlignment="Center"
-                            Width="240"
-                            Height="80"
-                            Grid.Column="3"
-                            Margin="0,0,0,0"
-                            BorderThickness="0"
-                            Content="ASTAR"
-                            Foreground="White"
-                            FontWeight="Bold"
-                            FontSize="20"
-                            FontFamily="Montserrat"
-                            Cursor="Hand"
-                            Click="btnNavbar_Click">
+                    <!--  ASTAR Butonu  -->
+                    <Button
+                        x:Name="btnAstar"
+                        Grid.Column="3"
+                        Width="240"
+                        Height="80"
+                        Margin="0,0,0,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        BorderThickness="0"
+                        Click="btnNavbar_Click"
+                        Content="ASTAR"
+                        Cursor="Hand"
+                        FontFamily="Montserrat"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="White">
                         <Button.Style>
                             <Style TargetType="Button">
-                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="Background" Value="Transparent" />
                                 <Style.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#c62b1e"/>
+                                        <Setter Property="Background" Value="#c62b1e" />
                                     </Trigger>
                                     <DataTrigger Binding="{Binding ActivePage}" Value="btnAstar">
-                                        <Setter Property="Background" Value="#c62b1e"/>
+                                        <Setter Property="Background" Value="#c62b1e" />
                                     </DataTrigger>
                                 </Style.Triggers>
                             </Style>
@@ -206,38 +215,38 @@
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border Background="{TemplateBinding Background}">
-                                    <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                                 </Border>
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
 
-                    <!-- KUMAŞ Butonu -->
-                    <Button x:Name="btnKumas"
-                            VerticalAlignment="Center"
-                            HorizontalAlignment="Center"
-                            Width="240"
-                            Height="80"
-                            Grid.Column="4"
-                            Margin="0,0,0,0"
-                            BorderThickness="0"
-                            Content="KUMAŞ"
-                            Foreground="White"
-                            FontWeight="Bold"
-                            FontSize="20"
-                            FontFamily="Montserrat"
-                            Cursor="Hand"
-                            Click="btnNavbar_Click">
+                    <!--  KUMAŞ Butonu  -->
+                    <Button
+                        x:Name="btnKumas"
+                        Grid.Column="4"
+                        Width="240"
+                        Height="80"
+                        Margin="0,0,0,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        BorderThickness="0"
+                        Click="btnNavbar_Click"
+                        Content="KUMAŞ"
+                        Cursor="Hand"
+                        FontFamily="Montserrat"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="White">
                         <Button.Style>
                             <Style TargetType="Button">
-                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="Background" Value="Transparent" />
                                 <Style.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#c62b1e"/>
+                                        <Setter Property="Background" Value="#c62b1e" />
                                     </Trigger>
                                     <DataTrigger Binding="{Binding ActivePage}" Value="btnKumas">
-                                        <Setter Property="Background" Value="#c62b1e"/>
+                                        <Setter Property="Background" Value="#c62b1e" />
                                     </DataTrigger>
                                 </Style.Triggers>
                             </Style>
@@ -245,38 +254,38 @@
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border Background="{TemplateBinding Background}">
-                                    <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                                 </Border>
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
 
-                    <!-- DOG SARMA Butonu -->
-                    <Button x:Name="btnDogSarma"
-                            VerticalAlignment="Center"
-                            HorizontalAlignment="Center"
-                            Width="240"
-                            Height="80"
-                            Grid.Column="5"
-                            Margin="0,0,0,0"
-                            BorderThickness="0"
-                            Content="DOG SARMA"
-                            Foreground="White"
-                            FontWeight="Bold"
-                            FontSize="20"
-                            FontFamily="Montserrat"
-                            Cursor="Hand"
-                            Click="btnNavbar_Click">
+                    <!--  DOG SARMA Butonu  -->
+                    <Button
+                        x:Name="btnDogSarma"
+                        Grid.Column="5"
+                        Width="240"
+                        Height="80"
+                        Margin="0,0,0,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        BorderThickness="0"
+                        Click="btnNavbar_Click"
+                        Content="DOG SARMA"
+                        Cursor="Hand"
+                        FontFamily="Montserrat"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="White">
                         <Button.Style>
                             <Style TargetType="Button">
-                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="Background" Value="Transparent" />
                                 <Style.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#c62b1e"/>
+                                        <Setter Property="Background" Value="#c62b1e" />
                                     </Trigger>
                                     <DataTrigger Binding="{Binding ActivePage}" Value="btnDogSarma">
-                                        <Setter Property="Background" Value="#c62b1e"/>
+                                        <Setter Property="Background" Value="#c62b1e" />
                                     </DataTrigger>
                                 </Style.Triggers>
                             </Style>
@@ -284,38 +293,38 @@
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border Background="{TemplateBinding Background}">
-                                    <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                                 </Border>
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
 
-                    <!-- REÇETE Butonu -->
-                    <Button x:Name="btnRecete"
-                            VerticalAlignment="Center"
-                            HorizontalAlignment="Center"
-                            Width="240"
-                            Height="80"
-                            Grid.Column="6"
-                            Margin="0,0,0,0"
-                            BorderThickness="0"
-                            Content="REÇETE"
-                            Foreground="White"
-                            FontWeight="Bold"
-                            FontSize="20"
-                            FontFamily="Montserrat"
-                            Cursor="Hand"
-                            Click="btnNavbar_Click">
+                    <!--  REÇETE Butonu  -->
+                    <Button
+                        x:Name="btnRecete"
+                        Grid.Column="6"
+                        Width="240"
+                        Height="80"
+                        Margin="0,0,0,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        BorderThickness="0"
+                        Click="btnNavbar_Click"
+                        Content="REÇETE"
+                        Cursor="Hand"
+                        FontFamily="Montserrat"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="White">
                         <Button.Style>
                             <Style TargetType="Button">
-                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="Background" Value="Transparent" />
                                 <Style.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#c62b1e"/>
+                                        <Setter Property="Background" Value="#c62b1e" />
                                     </Trigger>
                                     <DataTrigger Binding="{Binding ActivePage}" Value="btnRecete">
-                                        <Setter Property="Background" Value="#c62b1e"/>
+                                        <Setter Property="Background" Value="#c62b1e" />
                                     </DataTrigger>
                                 </Style.Triggers>
                             </Style>
@@ -323,38 +332,38 @@
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border Background="{TemplateBinding Background}">
-                                    <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                                 </Border>
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
 
-                    <!-- BAKIM Butonu -->
-                    <Button x:Name="btnBakim"
-                            VerticalAlignment="Center"
-                            HorizontalAlignment="Center"
-                            Width="240"
-                            Height="80"
-                            Grid.Column="7"
-                            Margin="0,0,0,0"
-                            BorderThickness="0"
-                            Content="BAKIM"
-                            Foreground="White"
-                            FontWeight="Bold"
-                            FontSize="20"
-                            FontFamily="Montserrat"
-                            Cursor="Hand"
-                            Click="btnNavbar_Click">
+                    <!--  BAKIM Butonu  -->
+                    <Button
+                        x:Name="btnBakim"
+                        Grid.Column="7"
+                        Width="240"
+                        Height="80"
+                        Margin="0,0,0,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        BorderThickness="0"
+                        Click="btnNavbar_Click"
+                        Content="BAKIM"
+                        Cursor="Hand"
+                        FontFamily="Montserrat"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="White">
                         <Button.Style>
                             <Style TargetType="Button">
-                                <Setter Property="Background" Value="Transparent"/>
+                                <Setter Property="Background" Value="Transparent" />
                                 <Style.Triggers>
                                     <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#c62b1e"/>
+                                        <Setter Property="Background" Value="#c62b1e" />
                                     </Trigger>
                                     <DataTrigger Binding="{Binding ActivePage}" Value="btnBakim">
-                                        <Setter Property="Background" Value="#c62b1e"/>
+                                        <Setter Property="Background" Value="#c62b1e" />
                                     </DataTrigger>
                                 </Style.Triggers>
                             </Style>
@@ -362,8 +371,7 @@
                         <Button.Template>
                             <ControlTemplate TargetType="Button">
                                 <Border Background="{TemplateBinding Background}">
-                                    <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                                 </Border>
                             </ControlTemplate>
                         </Button.Template>
@@ -371,7 +379,14 @@
                 </Grid>
             </Grid>
         </Border>
-        <controls:Errors x:Name="txbError" Margin="25,75,1521,895" IsError="True" MouseLeftButtonDown="txbError_MouseLeftButtonDown"/>
-        <controls:loginBtn x:Name="btnLogin" Margin="1870,10,10,1015" MouseLeftButtonDown="btnLogin_MouseLeftButtonDown"/>
+        <controls:Errors
+            x:Name="txbError"
+            Margin="25,75,1521,895"
+            IsError="True"
+            MouseLeftButtonDown="txbError_MouseLeftButtonDown" />
+        <controls:loginBtn
+            x:Name="btnLogin"
+            Margin="1870,10,10,1015"
+            MouseLeftButtonDown="btnLogin_MouseLeftButtonDown" />
     </Grid>
 </Window>

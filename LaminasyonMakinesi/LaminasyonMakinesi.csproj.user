@@ -14,7 +14,13 @@
     <Compile Update="View\UControl\loginBtn.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\NumPad.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\UControl\TextGroup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UControl\UpDownTextbox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -31,7 +37,13 @@
     <Page Update="View\UControl\loginBtn.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\NumPad.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\UControl\TextGroup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UControl\UpDownTextbox.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
