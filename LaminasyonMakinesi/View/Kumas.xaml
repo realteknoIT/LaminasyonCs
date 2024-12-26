@@ -71,7 +71,7 @@
             x:Name="laminasyonSungerGirisSag"
             Width="80"
             Height="80"
-            Margin="1257,150,583,730"
+            Margin="1157,70,513,630"
             Run="false"
             TargetWidth="80"
             Visibility="Hidden" />
@@ -80,7 +80,7 @@
             x:Name="laminasyonSungerGirisSol"
             Width="80"
             Height="80"
-            Margin="1257,150,583,730"
+            Margin="1157,70,510,630"
             Run="false"
             TargetWidth="80"
             Visibility="Visible" />
@@ -89,7 +89,7 @@
             x:Name="laminasyonKumasGirisSag"
             Width="80"
             Height="80"
-            Margin="1260,277,580,603"
+            Margin="1160,190,515,503"
             Run="false"
             TargetWidth="80"
             Visibility="Visible" />
@@ -98,7 +98,7 @@
             x:Name="laminasyonKumasGirisSol"
             Width="80"
             Height="80"
-            Margin="1260,277,580,603"
+            Margin="1160,190,515,503"
             Run="false"
             TargetWidth="80"
             Visibility="Hidden" />
@@ -107,7 +107,7 @@
             x:Name="laminasyonAstarGirisSag"
             Width="80"
             Height="80"
-            Margin="1257,398,583,482"
+            Margin="1157,298,510,382"
             Run="false"
             TargetWidth="80"
             Visibility="Hidden" />
@@ -116,7 +116,7 @@
             x:Name="laminasyonAstarGirisSol"
             Width="80"
             Height="80"
-            Margin="1257,398,583,482"
+            Margin="1157,300,510,382"
             Run="false"
             TargetWidth="80"
             Visibility="Visible" />

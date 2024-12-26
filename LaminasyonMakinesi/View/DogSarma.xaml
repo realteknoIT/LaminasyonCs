@@ -25,14 +25,14 @@
             Title="Kesici Bıçak"
             Width="200"
             Height="100"
-            Margin="760,198,960,462"
+            Margin="1650,8,70,712"
             TextBlock.TextAlignment="Center" />
 
         <controls:UpDownTextbox
             x:Name="lbl_asagiYukari"
             Title="Aşağı Yukarı"
             Height="100"
-            Margin="1221,170,126,590"
+            Margin="1613,82,34,530"
             ArrowLeftClicked="lbl_asagiYukari_ArrowLeftClicked_1"
             ArrowRightClicked="lbl_asagiYukari_ArrowRightClicked_1"
             NumPadClicked="lbl_asagiYukari_NumPadClicked_1"
