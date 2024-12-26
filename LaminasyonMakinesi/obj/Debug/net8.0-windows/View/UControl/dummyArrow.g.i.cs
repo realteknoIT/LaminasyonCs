@@ -70,7 +70,7 @@ namespace LaminasyonMakinesi.View.UControl {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/LaminasyonMakinesi;V1.0.0.0;component/view/ucontrol/dummyarrow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/LaminasyonMakinesi;component/view/ucontrol/dummyarrow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\View\UControl\dummyArrow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

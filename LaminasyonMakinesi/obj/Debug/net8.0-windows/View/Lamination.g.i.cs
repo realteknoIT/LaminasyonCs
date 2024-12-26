@@ -159,7 +159,7 @@ namespace LaminasyonMakinesi {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/LaminasyonMakinesi;V1.0.0.0;component/view/lamination.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/LaminasyonMakinesi;component/view/lamination.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\Lamination.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -20,49 +20,23 @@
                 Stretch="Uniform" />
         </Grid.Background>
 
-        <controls:textBox3
+        <controls:UpDownTextbox
             x:Name="lbl_ısıtmaSuresi"
             Title="Isıtma Süresi"
-            Width="150"
-            Height="60"
-            Margin="21,338,1749,562"
+            Margin="21,326,1624,534"
             Cursor="Hand"
             MouseDown="ısıtmaSuresi_MouseDown"
             Unit="sn"
             Value="0" />
-        <controls:whiteArrow
-            x:Name="ısıtmaSuresiKontrolArrowUp"
-            Width="80"
-            Height="80"
-            Margin="176,284,1664,596" />
-        <controls:whiteArrowDown
-            x:Name="ısıtmaSuresiKontrolArrowDown"
-            Width="80"
-            Height="80"
-            Margin="176,373,1664,507" />
 
-        <controls:textBox3
+        <controls:UpDownTextbox
             x:Name="lbl_sogutmaSuresi"
             Title="Soğutma Süresi"
-            Width="150"
-            Height="60"
-            Margin="21,527,1749,373"
+            Margin="21,527,1624,326"
             Cursor="Hand"
             MouseDown="sogutmaSuresi_MouseDown"
             Unit="sn"
             Value="0" />
-        <controls:whiteArrow
-            x:Name="sogutmaSuresiKontrolArrowUp"
-            Width="80"
-            Height="80"
-            Margin="176,473,1664,407"
-            MouseDown="sogutmaSuresiKontrolArrowUp_MouseDown" />
-        <controls:whiteArrowDown
-            x:Name="sogutmaSuresiKontrolArrowDown"
-            Width="80"
-            Height="80"
-            Margin="176,562,1664,318"
-            MouseDown="sogutmaSuresiKontrolArrowDown_MouseDown" />
 
         <controls:onOff
             x:Name="lbl_onOffBtn"
@@ -78,28 +52,11 @@
             Height="30"
             Margin="56,41,1664,889"
             Value="Çekici Motor Manual Kontrol" />
-        <controls:whiteArrowLeft
-            x:Name="lbl_cekiciMotorKontrolArrowLeft"
-            Width="80"
-            Height="80"
-            Margin="75,80,1765,800"
-            Cursor="Hand"
-            MouseDown="cekiciMotorKontrolArrowLeft_MouseDown" />
-        <controls:whiteArrowRight
-            x:Name="cekiciMotorKontrolArrowRight"
-            Width="80"
-            Height="80"
-            Margin="163,80,1677,800"
-            Cursor="Hand"
-            MouseDown="cekiciMotorKontrolArrowRight_MouseDown" />
 
         <controls:durumBilgisi
             x:Name="bufferDurumBilgisi"
             Title="Buffer Durum Bilgisi"
             Margin="449,388,1271,472" />
-
-
-
 
     </Grid>
 </Page>

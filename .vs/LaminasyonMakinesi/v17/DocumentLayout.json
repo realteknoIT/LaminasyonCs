@@ -1,0 +1,115 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\RT-Monster\\Desktop\\LaminasyonCs\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{17871844-63EB-4AE7-8D8E-A4A2991C3706}|LaminasyonMakinesi\\LaminasyonMakinesi.csproj|c:\\users\\rt-monster\\desktop\\laminasyoncs\\laminasyonmakinesi\\view\\numpad.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{17871844-63EB-4AE7-8D8E-A4A2991C3706}|LaminasyonMakinesi\\LaminasyonMakinesi.csproj|solutionrelative:laminasyonmakinesi\\view\\numpad.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17871844-63EB-4AE7-8D8E-A4A2991C3706}|LaminasyonMakinesi\\LaminasyonMakinesi.csproj|c:\\users\\rt-monster\\desktop\\laminasyoncs\\laminasyonmakinesi\\view\\sunger.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{17871844-63EB-4AE7-8D8E-A4A2991C3706}|LaminasyonMakinesi\\LaminasyonMakinesi.csproj|solutionrelative:laminasyonmakinesi\\view\\sunger.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17871844-63EB-4AE7-8D8E-A4A2991C3706}|LaminasyonMakinesi\\LaminasyonMakinesi.csproj|c:\\users\\rt-monster\\desktop\\laminasyoncs\\laminasyonmakinesi\\view\\kumas.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{17871844-63EB-4AE7-8D8E-A4A2991C3706}|LaminasyonMakinesi\\LaminasyonMakinesi.csproj|solutionrelative:laminasyonmakinesi\\view\\kumas.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17871844-63EB-4AE7-8D8E-A4A2991C3706}|LaminasyonMakinesi\\LaminasyonMakinesi.csproj|c:\\users\\rt-monster\\desktop\\laminasyoncs\\laminasyonmakinesi\\view\\astar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{17871844-63EB-4AE7-8D8E-A4A2991C3706}|LaminasyonMakinesi\\LaminasyonMakinesi.csproj|solutionrelative:laminasyonmakinesi\\view\\astar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17871844-63EB-4AE7-8D8E-A4A2991C3706}|LaminasyonMakinesi\\LaminasyonMakinesi.csproj|c:\\users\\rt-monster\\desktop\\laminasyoncs\\laminasyonmakinesi\\view\\keypad.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{17871844-63EB-4AE7-8D8E-A4A2991C3706}|LaminasyonMakinesi\\LaminasyonMakinesi.csproj|solutionrelative:laminasyonmakinesi\\view\\keypad.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17871844-63EB-4AE7-8D8E-A4A2991C3706}|LaminasyonMakinesi\\LaminasyonMakinesi.csproj|c:\\users\\rt-monster\\desktop\\laminasyoncs\\laminasyonmakinesi\\view\\numpad.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17871844-63EB-4AE7-8D8E-A4A2991C3706}|LaminasyonMakinesi\\LaminasyonMakinesi.csproj|solutionrelative:laminasyonmakinesi\\view\\numpad.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NumPad.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\RT-Monster\\Desktop\\LaminasyonCs\\LaminasyonMakinesi\\View\\NumPad.xaml.cs",
+              "RelativeDocumentMoniker": "LaminasyonMakinesi\\View\\NumPad.xaml.cs",
+              "ToolTip": "C:\\Users\\RT-Monster\\Desktop\\LaminasyonCs\\LaminasyonMakinesi\\View\\NumPad.xaml.cs*",
+              "RelativeToolTip": "LaminasyonMakinesi\\View\\NumPad.xaml.cs*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T07:58:22.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sunger.xaml",
+              "DocumentMoniker": "C:\\Users\\RT-Monster\\Desktop\\LaminasyonCs\\LaminasyonMakinesi\\View\\Sunger.xaml",
+              "RelativeDocumentMoniker": "LaminasyonMakinesi\\View\\Sunger.xaml",
+              "ToolTip": "C:\\Users\\RT-Monster\\Desktop\\LaminasyonCs\\LaminasyonMakinesi\\View\\Sunger.xaml",
+              "RelativeToolTip": "LaminasyonMakinesi\\View\\Sunger.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-26T07:57:00.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Kumas.xaml",
+              "DocumentMoniker": "C:\\Users\\RT-Monster\\Desktop\\LaminasyonCs\\LaminasyonMakinesi\\View\\Kumas.xaml",
+              "RelativeDocumentMoniker": "LaminasyonMakinesi\\View\\Kumas.xaml",
+              "ToolTip": "C:\\Users\\RT-Monster\\Desktop\\LaminasyonCs\\LaminasyonMakinesi\\View\\Kumas.xaml",
+              "RelativeToolTip": "LaminasyonMakinesi\\View\\Kumas.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-26T07:55:48.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Astar.xaml",
+              "DocumentMoniker": "C:\\Users\\RT-Monster\\Desktop\\LaminasyonCs\\LaminasyonMakinesi\\View\\Astar.xaml",
+              "RelativeDocumentMoniker": "LaminasyonMakinesi\\View\\Astar.xaml",
+              "ToolTip": "C:\\Users\\RT-Monster\\Desktop\\LaminasyonCs\\LaminasyonMakinesi\\View\\Astar.xaml",
+              "RelativeToolTip": "LaminasyonMakinesi\\View\\Astar.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-26T07:37:50.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NumPad.xaml",
+              "DocumentMoniker": "C:\\Users\\RT-Monster\\Desktop\\LaminasyonCs\\LaminasyonMakinesi\\View\\NumPad.xaml",
+              "RelativeDocumentMoniker": "LaminasyonMakinesi\\View\\NumPad.xaml",
+              "ToolTip": "C:\\Users\\RT-Monster\\Desktop\\LaminasyonCs\\LaminasyonMakinesi\\View\\NumPad.xaml",
+              "RelativeToolTip": "LaminasyonMakinesi\\View\\NumPad.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-25T10:53:19.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "KeyPad.xaml",
+              "DocumentMoniker": "C:\\Users\\RT-Monster\\Desktop\\LaminasyonCs\\LaminasyonMakinesi\\View\\KeyPad.xaml",
+              "RelativeDocumentMoniker": "LaminasyonMakinesi\\View\\KeyPad.xaml",
+              "ToolTip": "C:\\Users\\RT-Monster\\Desktop\\LaminasyonCs\\LaminasyonMakinesi\\View\\KeyPad.xaml",
+              "RelativeToolTip": "LaminasyonMakinesi\\View\\KeyPad.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-25T10:53:11.887Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

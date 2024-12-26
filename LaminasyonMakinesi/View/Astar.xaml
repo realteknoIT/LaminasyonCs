@@ -107,19 +107,6 @@
             Unit="mm"
             Value="0" />
 
-        <controls:whiteArrowLeft
-            x:Name="sagCekiciMotorKontrolArrowLeft"
-            Width="80"
-            Height="80"
-            Margin="1310,545,530,335"
-            Cursor="Hand" />
-        <controls:whiteArrowRight
-            x:Name="sagCekiciMotorKontrolArrowRight"
-            Width="80"
-            Height="80"
-            Margin="1395,545,445,335"
-            Cursor="Hand" />
-
         <controls:onOff
             x:Name="lbl_onOffBtn"
             Width="200"

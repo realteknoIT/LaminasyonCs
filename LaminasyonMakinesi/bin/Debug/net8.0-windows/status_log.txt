@@ -5,3 +5,4 @@
 2024-12-25 09:55:08 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
 2024-12-25 09:56:23 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
 2024-12-25 09:59:41 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.
+2024-12-26 10:58:40 - Laminasyon PLC Bağlanamadı: TCP bağlantısı başarısız oldu.

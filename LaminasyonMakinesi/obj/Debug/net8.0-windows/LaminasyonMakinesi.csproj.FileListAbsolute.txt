@@ -42,10 +42,6 @@ C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-win
 C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\View\UControl\TextGroup.g.cs
 C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\View\UControl\UpDownTextbox.g.cs
 C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\View\UControl\waterArrow.g.cs
-C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\View\UControl\whiteArrow.g.cs
-C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\View\UControl\whiteArrowDown.g.cs
-C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\View\UControl\whiteArrowLeft.g.cs
-C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\View\UControl\whiteArrowRight.g.cs
 C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\LaminasyonMakinesi_Content.g.cs
 C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
@@ -77,10 +73,6 @@ C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-win
 C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\View\UControl\textBox3.baml
 C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\View\UControl\UpDownTextbox.baml
 C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\View\UControl\waterArrow.baml
-C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\View\UControl\whiteArrow.baml
-C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\View\UControl\whiteArrowDown.baml
-C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\View\UControl\whiteArrowLeft.baml
-C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\View\UControl\whiteArrowRight.baml
 C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\LaminasyonMakinesi.g.resources
 C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\LaminasyonMakinesi.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\LaminasyonMakinesi.AssemblyInfoInputs.cache
@@ -93,3 +85,5 @@ C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-win
 C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\LaminasyonMakinesi.pdb
 C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\LaminasyonMakinesi.genruntimeconfig.cache
 C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\ref\LaminasyonMakinesi.dll
+C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\View\NumPad.g.cs
+C:\Users\RT-Monster\Desktop\LaminasyonCs\LaminasyonMakinesi\obj\Debug\net8.0-windows\View\NumPad.baml
