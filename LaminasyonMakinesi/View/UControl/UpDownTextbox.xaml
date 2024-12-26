@@ -109,7 +109,7 @@
                     Margin="10,0,10,5"
                     Background="#7D6479EF"
                     CornerRadius="5"
-                    MouseLeftButtonDown="Border_MouseLeftButtonDown">
+                    MouseLeftButtonDown="NumPad_Click">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition />

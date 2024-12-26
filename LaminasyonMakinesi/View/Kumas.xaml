@@ -23,9 +23,11 @@
         <controls:UpDownTextbox
             x:Name="lbl_ısıtmaSuresi"
             Title="Isıtma Süresi"
-            Margin="21,326,1624,534"
+            Margin="21,326,1624,434"
             Cursor="Hand"
-            MouseDown="ısıtmaSuresi_MouseDown"
+            ArrowLeftClicked="lbl_ısıtmaSuresi_ArrowLeftClicked_1"
+            ArrowRightClicked="lbl_ısıtmaSuresi_ArrowRightClicked_1"
+            NumPadClicked="lbl_ısıtmaSuresi_NumPadClicked_1"
             Unit="sn"
             Value="0" />
 

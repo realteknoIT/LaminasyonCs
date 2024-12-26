@@ -23,6 +23,7 @@ namespace LaminasyonMakinesi.View.UControl
     {
         public event EventHandler ArrowLeftClicked;
         public event EventHandler ArrowRightClicked;
+        public event EventHandler NumPadClicked;
         public event PropertyChangedEventHandler PropertyChanged;
 
         // Sağ ok için event
@@ -43,6 +44,12 @@ namespace LaminasyonMakinesi.View.UControl
         {
             ArrowRightClicked?.Invoke(this, EventArgs.Empty); // Event'i tetikle
         }
+
+        private void NumPad_Click(object sender, MouseButtonEventArgs e)
+        {
+            NumPadClicked?.Invoke(this, EventArgs.Empty); // Event'i tetikle
+        }
+
         protected virtual void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
@@ -160,11 +167,6 @@ namespace LaminasyonMakinesi.View.UControl
                     birim.FontSize = textSize;
                 }
             }
-        }
-
-        private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-
         }
     }
 }
