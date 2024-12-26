@@ -15,6 +15,7 @@ namespace LaminasyonMakinesi
     public partial class Loading : Window
     {
         int DelayCarpan = 1;
+        bool ConnectSql = true;
         public Loading()
         {
             InitializeComponent();
@@ -65,12 +66,13 @@ namespace LaminasyonMakinesi
             UpdateStatus("Veritabanına Bağlanılıyor...");
             Task.Delay(3 * DelayCarpan).Wait();
             CheckAndCreateDatabase();
-
-            // Tablo Kontrolü ve Oluşturma
-            UpdateStatus("Tablolar kontrol ediliyor...");
-            Task.Delay(3 * DelayCarpan).Wait();
-            CheckAndCreateTables();
-
+            if (ConnectSql)
+            {
+                // Tablo Kontrolü ve Oluşturma
+                UpdateStatus("Tablolar kontrol ediliyor...");
+                Task.Delay(3 * DelayCarpan).Wait();
+                CheckAndCreateTables();
+            }
             // Arayüz Yükleniyor
             UpdateStatus("Arayüz Yükleniyor...");
             Task.Delay(1 * DelayCarpan).Wait(); // Arayüz yükleme işlemi burada yapılır
@@ -119,10 +121,12 @@ namespace LaminasyonMakinesi
                 Config.SqlConnection = new SqlConnection(Config.SqlAdress);
                 Config.SqlConnection.Open();
                 UpdateStatus("Lamination veritabanına başarıyla bağlanıldı.");
+                ConnectSql = true;
             }
             catch (Exception ex)
             {
                 UpdateStatus($"Veritabanına bağlanırken bir hata oluştu: {ex.Message}", true, "Program Açılırken Bazı Hatalar Oluştu!");
+                ConnectSql = false;
             }
         }
         private void CheckAndCreateTables()
