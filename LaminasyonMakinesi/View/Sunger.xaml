@@ -23,18 +23,22 @@
         <controls:UpDownTextbox
             x:Name="lbl_ısıtmaSuresi1"
             Title="Isıtma Süresi"
-            Margin="532,443,1130,421"
+            Margin="432,343,1030,321"
             Cursor="Hand"
-            MouseDown="ısıtmaSuresi1_MouseDown"
+            ArrowLeftClicked="lbl_ısıtmaSuresi1_ArrowLeftClicked"
+            ArrowRightClicked="lbl_ısıtmaSuresi1_ArrowRightClicked"
+            NumPadClicked="lbl_ısıtmaSuresi1_NumPadClicked"
             Unit="sn"
             Value="0" />
 
         <controls:UpDownTextbox
             x:Name="lbl_sogutmaSuresi1"
             Title="Soğutma Süresi"
-            Margin="532,634,1130,235"
+            Margin="432,534,1030,135"
             Cursor="Hand"
-            MouseDown="sogutmaSuresi1_MouseDown"
+            ArrowLeftClicked="lbl_sogutmaSuresi1_ArrowLeftClicked"
+            ArrowRightClicked="lbl_sogutmaSuresi1_ArrowRightClicked"
+            NumPadClicked="lbl_sogutmaSuresi1_NumPadClicked"
             Unit="sn"
             Value="0" />
 
@@ -42,7 +46,7 @@
             x:Name="cekiciMotorKontrol1"
             Width="200"
             Height="30"
-            Margin="43,244,1677,686"
+            Margin="43,144,1677,586"
             Value="Çekici Motor Manual Kontrol" />
 
         <controls:textBox3
@@ -50,7 +54,7 @@
             Title="Tansiyon"
             Width="150"
             Height="60"
-            Margin="532,319,1238,581"
+            Margin="532,219,1238,481"
             Unit="V"
             Value="0" />
 
@@ -59,7 +63,7 @@
             Title="Loadcell Değeri"
             Width="150"
             Height="60"
-            Margin="1611,68,159,832"
+            Margin="1611,8,159,732"
             Unit="kg"
             Value="0" />
 

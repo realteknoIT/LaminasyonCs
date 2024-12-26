@@ -24,5 +24,20 @@ namespace LaminasyonMakinesi.View
         {
             InitializeComponent();
         }
+
+        private void lbl_asagiYukari_ArrowRightClicked_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_asagiYukari_ArrowLeftClicked_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_asagiYukari_NumPadClicked_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

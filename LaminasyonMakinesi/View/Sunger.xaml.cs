@@ -24,8 +24,22 @@ namespace LaminasyonMakinesi.View
         {
             InitializeComponent();
         }
+        
+        private void lbl_ısıtmaSuresi1_ArrowLeftClicked(object sender, EventArgs e)
+        {
+            int currentValue = int.Parse(lbl_ısıtmaSuresi1.Value.ToString());
 
-        private void ısıtmaSuresi1_MouseDown(object sender, MouseButtonEventArgs e)
+            lbl_ısıtmaSuresi1.Value = (currentValue - 5).ToString();
+        }
+
+        private void lbl_ısıtmaSuresi1_ArrowRightClicked(object sender, EventArgs e)
+        {
+            int currentValue = int.Parse(lbl_ısıtmaSuresi1.Value.ToString());
+
+            lbl_ısıtmaSuresi1.Value = (currentValue + 5).ToString();
+        }
+
+        private void lbl_ısıtmaSuresi1_NumPadClicked(object sender, EventArgs e)
         {
             KeyPad keyPad = new KeyPad();
 
@@ -37,21 +51,21 @@ namespace LaminasyonMakinesi.View
             }
         }
 
-        private void ısıtmaSuresiKontrolArrowUp1_MouseDown(object sender, MouseButtonEventArgs e)
+        private void lbl_sogutmaSuresi1_ArrowLeftClicked(object sender, EventArgs e)
         {
             int currentValue = int.Parse(lbl_ısıtmaSuresi1.Value.ToString());
 
-            lbl_ısıtmaSuresi1.Value = (currentValue + 5).ToString();
+            lbl_sogutmaSuresi1.Value = (currentValue - 5).ToString();
         }
 
-        private void ısıtmaSuresiKontrolArrowDown1_MouseDown(object sender, MouseButtonEventArgs e)
+        private void lbl_sogutmaSuresi1_ArrowRightClicked(object sender, EventArgs e)
         {
             int currentValue = int.Parse(lbl_ısıtmaSuresi1.Value.ToString());
 
-            lbl_ısıtmaSuresi1.Value = (currentValue - 5).ToString();
+            lbl_sogutmaSuresi1.Value = (currentValue + 5).ToString();
         }
-        
-        private void sogutmaSuresi1_MouseDown(object sender, MouseButtonEventArgs e)
+
+        private void lbl_sogutmaSuresi1_NumPadClicked(object sender, EventArgs e)
         {
             KeyPad keyPad = new KeyPad();
 
@@ -63,32 +77,27 @@ namespace LaminasyonMakinesi.View
             }
         }
 
-        private void sogutmaSuresiKontrolArrowUp1_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Lbl_ısıtmaSuresi1_ArrowLeftClicked(object sender, EventArgs e)
         {
-            int currentValue = int.Parse(lbl_ısıtmaSuresi1.Value.ToString());
+            Globals.UpdateStatus("ısıtma suresi down");
 
-            lbl_sogutmaSuresi1.Value = (currentValue + 5).ToString();
         }
 
-        private void sogutmaSuresiKontrolArrowDown1_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Lbl_ısıtmaSuresi1_ArrowRightClicked(object sender, EventArgs e)
         {
-            int currentValue = int.Parse(lbl_ısıtmaSuresi1.Value.ToString());
+            Globals.UpdateStatus("ısıtma suresi up");
 
-            lbl_sogutmaSuresi1.Value = (currentValue - 5).ToString();
         }
 
-        private void cekiciMotorKontrolArrowLeft1_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Lbl_sogutmaSuresi1_ArrowLeftClicked(object sender, EventArgs e)
         {
-            int currentValue = int.Parse(cekiciMotorKontrol1.Value.ToString());
-
-            cekiciMotorKontrol1.Value = (currentValue + 5).ToString();
+            Globals.UpdateStatus("sogutma suresi down");
         }
 
-        private void cekiciMotorKontrolArrowRight1_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Lbl_sogutmaSuresi1_ArrowRightClicked(object sender, EventArgs e)
         {
-            int currentValue = int.Parse(cekiciMotorKontrol1.Value.ToString());
+            Globals.UpdateStatus("sogutma suresi up");
 
-            cekiciMotorKontrol1.Value = (currentValue - 5).ToString();
         }
     }
 }

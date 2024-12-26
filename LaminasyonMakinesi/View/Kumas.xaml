@@ -20,10 +20,11 @@
                 Stretch="Uniform" />
         </Grid.Background>
 
+
         <controls:UpDownTextbox
             x:Name="lbl_ısıtmaSuresi"
             Title="Isıtma Süresi"
-            Margin="21,326,1624,434"
+            Margin="20,192,1628,468"
             Cursor="Hand"
             ArrowLeftClicked="lbl_ısıtmaSuresi_ArrowLeftClicked_1"
             ArrowRightClicked="lbl_ısıtmaSuresi_ArrowRightClicked_1"
@@ -34,10 +35,12 @@
         <controls:UpDownTextbox
             x:Name="lbl_sogutmaSuresi"
             Title="Soğutma Süresi"
-            Margin="21,527,1624,326"
-            Cursor="Hand"
-            MouseDown="sogutmaSuresi_MouseDown"
-            Unit="sn"
+            Height="100"
+            Margin="20,308,1627,352"
+            ArrowLeftClicked="lbl_sogutmaSuresi_ArrowLeftClicked"
+            ArrowRightClicked="lbl_sogutmaSuresi_ArrowRightClicked"
+            NumPadClicked="lbl_sogutmaSuresi_NumPadClicked"
+            Unit="mm"
             Value="0" />
 
         <controls:onOff
@@ -45,7 +48,7 @@
             Title="Kazıyıcı Modu"
             Width="200"
             Height="100"
-            Margin="449,571,1271,289"
+            Margin="56,444,1664,216"
             TextBlock.TextAlignment="Center" />
 
         <controls:textBox1
@@ -58,7 +61,191 @@
         <controls:durumBilgisi
             x:Name="bufferDurumBilgisi"
             Title="Buffer Durum Bilgisi"
-            Margin="449,388,1271,472" />
+            Margin="449,288,1271,372" />
+
+
+
+
+
+        <controls:spinnerSag
+            x:Name="laminasyonSungerGirisSag"
+            Width="80"
+            Height="80"
+            Margin="1257,150,583,730"
+            Run="false"
+            TargetWidth="80"
+            Visibility="Hidden" />
+
+        <controls:spinnerSol
+            x:Name="laminasyonSungerGirisSol"
+            Width="80"
+            Height="80"
+            Margin="1257,150,583,730"
+            Run="false"
+            TargetWidth="80"
+            Visibility="Visible" />
+
+        <controls:spinnerSag
+            x:Name="laminasyonKumasGirisSag"
+            Width="80"
+            Height="80"
+            Margin="1260,277,580,603"
+            Run="false"
+            TargetWidth="80"
+            Visibility="Visible" />
+
+        <controls:spinnerSol
+            x:Name="laminasyonKumasGirisSol"
+            Width="80"
+            Height="80"
+            Margin="1260,277,580,603"
+            Run="false"
+            TargetWidth="80"
+            Visibility="Hidden" />
+
+        <controls:spinnerSag
+            x:Name="laminasyonAstarGirisSag"
+            Width="80"
+            Height="80"
+            Margin="1257,398,583,482"
+            Run="false"
+            TargetWidth="80"
+            Visibility="Hidden" />
+
+        <controls:spinnerSol
+            x:Name="laminasyonAstarGirisSol"
+            Width="80"
+            Height="80"
+            Margin="1257,398,583,482"
+            Run="false"
+            TargetWidth="80"
+            Visibility="Visible" />
+
+        <controls:flameAnima
+            x:Name="kumasFlame"
+            Height="30"
+            Margin="1138,200,774,0"
+            VerticalAlignment="Top"
+            Run="True" />
+
+        <controls:flameAnima
+            x:Name="astarFlame"
+            Height="30"
+            Margin="1362,327,550,0"
+            VerticalAlignment="Top"
+            Run="True" />
+
+        <controls:onOff
+            x:Name="lbl_onOffBtn1"
+            Width="200"
+            Height="100"
+            Margin="1698,521,22,150"
+            TextBlock.TextAlignment="Center" />
+
+        <controls:UpDownTextbox
+            x:Name="lbl_kumasAstarSilindirMesafe"
+            Title="Kumaş - Astar Silindir Mesafesi"
+            Height="100"
+            Margin="1561,100,86,560"
+            ArrowLeftClicked="lbl_kumasAstarSilindirMesafe_ArrowLeftClicked_1"
+            ArrowRightClicked="lbl_kumasAstarSilindirMesafe_ArrowRightClicked_1"
+            NumPadClicked="lbl_kumasAstarSilindirMesafe_NumPadClicked"
+            Unit="mm"
+            Value="0" />
+
+        <controls:UpDownTextbox
+            x:Name="lbl_sagBrulorMesafe"
+            Title="Brülör Mesafesi"
+            Height="100"
+            Margin="1561,228,86,432"
+            ArrowLeftClicked="lbl_sagBrulorMesafe_ArrowLeftClicked_1"
+            ArrowRightClicked="lbl_sagBrulorMesafe_ArrowRightClicked_1"
+            NumPadClicked="lbl_sagBrulorMesafe_NumPadClicked_1"
+            Unit="mm"
+            Value="0" />
+
+        <controls:textBox1
+            x:Name="sicaklikGiris"
+            Width="100"
+            Margin="1005,70,205,824"
+            Value="Giriş Sıcaklık" />
+
+        <controls:textBox1
+            x:Name="sicaklikCikis"
+            Width="100"
+            Margin="976,70,664,824"
+            Value="Çıkış Sıcaklık" />
+
+        <controls:textBox2
+            x:Name="lbl_süngerDereceGiris"
+            Width="40"
+            Height="17"
+            Margin="1445,101,435,642"
+            Unit="°C"
+            Value="0" />
+
+        <controls:textBox2
+            x:Name="lbl_kumasDereceGiris"
+            Width="40"
+            Height="17"
+            Margin="1445,225,435,518"
+            Unit="°C"
+            Value="0" />
+
+        <controls:textBox2
+            x:Name="lbl_astarDereceGiris"
+            Width="40"
+            Height="17"
+            Margin="1445,338,435,405"
+            Unit="°C"
+            Value="0" />
+
+        <controls:textBox2
+            x:Name="lbl_süngerDereceCikis"
+            Width="40"
+            Height="17"
+            Margin="1106,36,774,707"
+            Unit="°C"
+            Value="0" />
+
+        <controls:textBox2
+            x:Name="lbl_kumasDereceCikis"
+            Width="40"
+            Height="17"
+            Margin="1106,163,774,580"
+            Unit="°C"
+            Value="0" />
+
+        <controls:textBox2
+            x:Name="lbl_astarDereceCikis"
+            Width="40"
+            Height="17"
+            Margin="1106,298,774,445"
+            Unit="°C"
+            Value="0" />
+
+        <controls:waterArrow
+            x:Name="laminasyonSungerAkis"
+            Width="80"
+            Height="60"
+            Margin="1151,14,689,646"
+            Run="false" />
+
+        <controls:waterArrow
+            x:Name="laminasyonKumasAkis"
+            Width="80"
+            Height="60"
+            Margin="1151,140,689,510"
+            Run="false" />
+
+        <controls:waterArrow
+            x:Name="laminasyonAstarAkis"
+            Width="80"
+            Height="60"
+            Margin="1151,268,689,372"
+            Run="false" />
+
+
 
     </Grid>
 </Page>
