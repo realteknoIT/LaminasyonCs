@@ -44,7 +44,22 @@ namespace LaminasyonMakinesi
             AstarDogIleri = false,
             KumasDogIleri = false,
             KumasAlev = false,
-            AstarAlev = false;
+            AstarAlev = false,
+            // alt kısım yeni eklenenler
+            AcilStop = false,
+            StepMBOkumaYazma = false,
+            StepAcilStop = false,
+            AkisSicaklikMBOkumaYazma =false,
+            PartnerPlcHaberlesme = false,
+            SunBrulorEnabled =  false,
+            SunBrulorReset = false,
+            SunBrulorHome = false,
+            SunBrulorMove = false,
+            AstBrulorEnabled = false,
+            AstBrulorReset = false,
+            AstBrulorHome = false,
+            AstBrulorMove = false;
+
         //plcden gelecekler ------------------
         public static int
             ConnectTryCount = 1;

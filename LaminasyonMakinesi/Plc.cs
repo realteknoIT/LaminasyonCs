@@ -76,6 +76,41 @@ namespace LaminasyonMakinesi
             Globals.FlowBrulorInFabric = flowBrulorInFabric;
             Globals.FlowBrulorInPrimer = flowBrulorInPrimer;
 
+            int result1 = Config.Plc.DBRead(14, 0, 13, Buffer);
+            if (result != 0)
+            {
+                Globals.UpdateStatus(Config.Plc.ErrorText(result1));
+                return;
+            }
+
+            bool acilStop = S7.GetBitAt(Buffer, 0, 0); 
+            bool stepMbOkumaYazma = S7.GetBitAt(Buffer, 0, 1); 
+            bool stepAcilStop = S7.GetBitAt(Buffer, 0, 2); 
+            bool akisSicaklikMbOkumaYazma = S7.GetBitAt(Buffer, 0, 3); 
+            bool partnerPlcHaberlesme = S7.GetBitAt(Buffer, 0, 4); 
+            bool sunBrulorEnabled = S7.GetBitAt(Buffer, 0, 5);
+            bool sunBrulorReset = S7.GetBitAt(Buffer, 0, 6); 
+            bool sunBrulorHome = S7.GetBitAt(Buffer, 0, 7); 
+            bool sunBrulorMove = S7.GetBitAt(Buffer, 1, 0); 
+            bool astBrulorEnabled = S7.GetBitAt(Buffer, 1, 1); 
+            bool astBrulorReset = S7.GetBitAt(Buffer, 1, 2); 
+            bool astBrulorHome = S7.GetBitAt(Buffer, 1, 3);
+            bool astBrulorMove = S7.GetBitAt(Buffer, 1, 4);
+
+            Globals.AcilStop = acilStop; 
+            Globals.StepMBOkumaYazma = stepMbOkumaYazma; 
+            Globals.StepAcilStop = stepAcilStop; 
+            Globals.AkisSicaklikMBOkumaYazma = akisSicaklikMbOkumaYazma; 
+            Globals.PartnerPlcHaberlesme = partnerPlcHaberlesme; 
+            Globals.SunBrulorEnabled = sunBrulorEnabled; 
+            Globals.SunBrulorReset = sunBrulorReset; 
+            Globals.SunBrulorHome = sunBrulorHome; 
+            Globals.SunBrulorMove = sunBrulorMove; 
+            Globals.AstBrulorEnabled = astBrulorEnabled;
+            Globals.AstBrulorReset = astBrulorReset; 
+            Globals.AstBrulorHome = astBrulorHome;
+            Globals.AstBrulorMove = astBrulorMove;
+
 
 
         }
