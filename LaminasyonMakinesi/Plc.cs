@@ -17,8 +17,8 @@ namespace LaminasyonMakinesi
             {
                 int connectCount = 0;
 
-                        //Config.PlcStatu = "PLC'YE BAĞLANILIYOR";
-  
+                //Config.PlcStatu = "PLC'YE BAĞLANILIYOR";
+
                 while (connectCount < 1)
                 {
                     int result = Config.Plc.ConnectTo(Config.PlcIP, 0, 0);
@@ -26,53 +26,53 @@ namespace LaminasyonMakinesi
                     if (Config.PlcStatu == 0)
                     {
                         //Text = "PLC BAĞLANTISI YAPILDI";
-          
+
                         return;
                     }
                     connectCount++;
                     await Task.Delay(100);
-                }               
+                }
 
-                        //Text = "PLC BAĞLI DEĞİL";
+                //Text = "PLC BAĞLI DEĞİL";
             }
             Config.PlcStatu = 1;
         }
-        
+
         public static void ReadPlc()
         {
             byte[] Buffer = new byte[52];
             int result = Config.Plc.DBRead(3, 0, 52, Buffer);
             if (result != 0)
             {
-                Globals.UpdateStatus (Config.Plc.ErrorText(result));
+                Globals.UpdateStatus(Config.Plc.ErrorText(result));
                 return;
             }
 
-            int machineSpeed = S7.GetDIntAt(Buffer, 0); 
-            int tempInTop = S7.GetDIntAt(Buffer, 4); 
-            int tempInBottom = S7.GetDIntAt(Buffer, 8); 
-            int tempBrulorInFabric = S7.GetDIntAt(Buffer, 12); 
+            int machineSpeed = S7.GetDIntAt(Buffer, 0);
+            int tempInTop = S7.GetDIntAt(Buffer, 4);
+            int tempInBottom = S7.GetDIntAt(Buffer, 8);
+            int tempBrulorInFabric = S7.GetDIntAt(Buffer, 12);
             int tempBrulorInPrimer = S7.GetDIntAt(Buffer, 16);
             int tempOutTop = S7.GetDIntAt(Buffer, 20);
-            int tempOutBottom = S7.GetDIntAt(Buffer, 24); 
-            int tempBrulorOutFabric = S7.GetDIntAt(Buffer, 28); 
-            int tempBrulorOutPrimer = S7.GetDIntAt(Buffer, 32); 
+            int tempOutBottom = S7.GetDIntAt(Buffer, 24);
+            int tempBrulorOutFabric = S7.GetDIntAt(Buffer, 28);
+            int tempBrulorOutPrimer = S7.GetDIntAt(Buffer, 32);
             int flowInTop = S7.GetDIntAt(Buffer, 36);
-            int flowInBottom = S7.GetDIntAt(Buffer, 40); 
+            int flowInBottom = S7.GetDIntAt(Buffer, 40);
             int flowBrulorInFabric = S7.GetDIntAt(Buffer, 44);
             int flowBrulorInPrimer = S7.GetDIntAt(Buffer, 48);
 
-            Globals.MachineSpeed = machineSpeed; 
-            Globals.TempInTop = tempInTop; 
-            Globals.TempInBottom = tempInBottom; 
-            Globals.TempBrulorInFabric = tempBrulorInFabric; 
-            Globals.TempBrulorInPrimer = tempBrulorInPrimer; 
-            Globals.TempOutTop = tempOutTop; 
-            Globals.TempOutBottom = tempOutBottom; 
+            Globals.MachineSpeed = machineSpeed;
+            Globals.TempInTop = tempInTop;
+            Globals.TempInBottom = tempInBottom;
+            Globals.TempBrulorInFabric = tempBrulorInFabric;
+            Globals.TempBrulorInPrimer = tempBrulorInPrimer;
+            Globals.TempOutTop = tempOutTop;
+            Globals.TempOutBottom = tempOutBottom;
             Globals.TempBrulorOutFabric = tempBrulorOutFabric;
-            Globals.TempBrulorOutPrimer = tempBrulorOutPrimer; 
-            Globals.FlowInTop = flowInTop; 
-            Globals.FlowInBottom = flowInBottom; 
+            Globals.TempBrulorOutPrimer = tempBrulorOutPrimer;
+            Globals.FlowInTop = flowInTop;
+            Globals.FlowInBottom = flowInBottom;
             Globals.FlowBrulorInFabric = flowBrulorInFabric;
             Globals.FlowBrulorInPrimer = flowBrulorInPrimer;
 
@@ -83,31 +83,31 @@ namespace LaminasyonMakinesi
                 return;
             }
 
-            bool acilStop = S7.GetBitAt(Buffer, 0, 0); 
-            bool stepMbOkumaYazma = S7.GetBitAt(Buffer, 0, 1); 
-            bool stepAcilStop = S7.GetBitAt(Buffer, 0, 2); 
-            bool akisSicaklikMbOkumaYazma = S7.GetBitAt(Buffer, 0, 3); 
-            bool partnerPlcHaberlesme = S7.GetBitAt(Buffer, 0, 4); 
+            bool acilStop = S7.GetBitAt(Buffer, 0, 0);
+            bool stepMbOkumaYazma = S7.GetBitAt(Buffer, 0, 1);
+            bool stepAcilStop = S7.GetBitAt(Buffer, 0, 2);
+            bool akisSicaklikMbOkumaYazma = S7.GetBitAt(Buffer, 0, 3);
+            bool partnerPlcHaberlesme = S7.GetBitAt(Buffer, 0, 4);
             bool sunBrulorEnabled = S7.GetBitAt(Buffer, 0, 5);
-            bool sunBrulorReset = S7.GetBitAt(Buffer, 0, 6); 
-            bool sunBrulorHome = S7.GetBitAt(Buffer, 0, 7); 
-            bool sunBrulorMove = S7.GetBitAt(Buffer, 1, 0); 
-            bool astBrulorEnabled = S7.GetBitAt(Buffer, 1, 1); 
-            bool astBrulorReset = S7.GetBitAt(Buffer, 1, 2); 
+            bool sunBrulorReset = S7.GetBitAt(Buffer, 0, 6);
+            bool sunBrulorHome = S7.GetBitAt(Buffer, 0, 7);
+            bool sunBrulorMove = S7.GetBitAt(Buffer, 1, 0);
+            bool astBrulorEnabled = S7.GetBitAt(Buffer, 1, 1);
+            bool astBrulorReset = S7.GetBitAt(Buffer, 1, 2);
             bool astBrulorHome = S7.GetBitAt(Buffer, 1, 3);
             bool astBrulorMove = S7.GetBitAt(Buffer, 1, 4);
 
-            Globals.AcilStop = acilStop; 
-            Globals.StepMBOkumaYazma = stepMbOkumaYazma; 
-            Globals.StepAcilStop = stepAcilStop; 
-            Globals.AkisSicaklikMBOkumaYazma = akisSicaklikMbOkumaYazma; 
-            Globals.PartnerPlcHaberlesme = partnerPlcHaberlesme; 
-            Globals.SunBrulorEnabled = sunBrulorEnabled; 
-            Globals.SunBrulorReset = sunBrulorReset; 
-            Globals.SunBrulorHome = sunBrulorHome; 
-            Globals.SunBrulorMove = sunBrulorMove; 
+            Globals.AcilStop = acilStop;
+            Globals.StepMBOkumaYazma = stepMbOkumaYazma;
+            Globals.StepAcilStop = stepAcilStop;
+            Globals.AkisSicaklikMBOkumaYazma = akisSicaklikMbOkumaYazma;
+            Globals.PartnerPlcHaberlesme = partnerPlcHaberlesme;
+            Globals.SunBrulorEnabled = sunBrulorEnabled;
+            Globals.SunBrulorReset = sunBrulorReset;
+            Globals.SunBrulorHome = sunBrulorHome;
+            Globals.SunBrulorMove = sunBrulorMove;
             Globals.AstBrulorEnabled = astBrulorEnabled;
-            Globals.AstBrulorReset = astBrulorReset; 
+            Globals.AstBrulorReset = astBrulorReset;
             Globals.AstBrulorHome = astBrulorHome;
             Globals.AstBrulorMove = astBrulorMove;
 
@@ -115,13 +115,36 @@ namespace LaminasyonMakinesi
 
         }
 
-        public static void WritePlc()
+        public static void ReadAndWritePlc()
         {
 
-        }
+            byte[] Buffer = new byte[100];
+            int result = Config.Plc.DBRead(3, 0, 100, Buffer);
 
-        public static void ConnectPlc()
-        {
+            if (result != 0)
+            {
+                Globals.UpdateStatus(Config.Plc.ErrorText(result));
+                return;
+            }
+
+
+            int okunanDeger = S7.GetDIntAt(Buffer, 0);
+            int yeniDeger = okunanDeger + 10;
+
+            S7.SetDIntAt(Buffer, 0, yeniDeger);
+
+            result = Config.Plc.DBWrite(3, 0, 100, Buffer);
+
+            if (result != 0)
+            {
+                Globals.UpdateStatus(Config.Plc.ErrorText(result));
+                return;
+            }
+
+
+
+
+
 
         }
     }

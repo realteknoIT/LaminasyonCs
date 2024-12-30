@@ -67,10 +67,6 @@ namespace LaminasyonMakinesi
             public static List<User> Users = new();
             public static User LoggedInUser;
 
-
-
-
-
         //---------------------------------------------
         public static double
             MachineSpeed = 0,
@@ -87,7 +83,17 @@ namespace LaminasyonMakinesi
             FlowBrulorInFabric = 0,
             FlowBrulorInPrimer = 0;
 
-        //---------------------------------------------
+        //plcye gidecekler-------------------------------
+
+
+
+
+
+
+
+
+
+
 
 
         public static void UpdateStatus(string message, bool error = false, string title = "Bir Hatayla Karşılaşıldı!")
