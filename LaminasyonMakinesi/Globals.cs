@@ -53,6 +53,28 @@ namespace LaminasyonMakinesi
             public static User LoggedInUser;
 
 
+
+
+
+        //---------------------------------------------
+        public static double
+            MachineSpeed = 0,
+            TempInTop = 0,
+            TempInBottom = 0,
+            TempBrulorInFabric = 0,
+            TempBrulorInPrimer = 0,
+            TempOutTop = 0,
+            TempOutBottom = 0,
+            TempBrulorOutFabric = 0,
+            TempBrulorOutPrimer = 0,
+            FlowInTop = 0,
+            FlowInBottom = 0,
+            FlowBrulorInFabric = 0,
+            FlowBrulorInPrimer = 0;
+
+        //---------------------------------------------
+
+
         public static void UpdateStatus(string message, bool error = false, string title = "Bir Hatayla Karşılaşıldı!")
         {
 

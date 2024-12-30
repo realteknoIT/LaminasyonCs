@@ -99,5 +99,10 @@ namespace LaminasyonMakinesi.View
             Globals.UpdateStatus("sogutma suresi up");
 
         }
+
+        private void loadcellDegeri_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
